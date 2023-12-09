@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="static/Palkotikumicon.png">
+
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet" href="static/mainitalapok.css">
+    <link rel="stylesheet" href="static/oldalak.css">
+
+    <title>Informatikai tehetséggondozó program</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--INTER FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;900&display=swap" rel="stylesheet">
+    <!--PHILOSOPHER FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+    <!--JULIUS SANS ONE FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <header>
+        <h1><a href="index.html" title="Kezdőlap">Palkotikum</a></h1>
+        <h2><a href="italapok.html" title="Nyitóoldal">Informatikai tehetséggondozó program</a></h2>
+      </header>
+      <nav>
+        <a href="#">Rólunk</a>
+        <a href="#">Blog</a>
+        <!--<a href="#" id="podcastbutton">
+          <img src="../static/podcast-2665179_640.png" id="podcasticon" /></i>
+          <p>Podcast</p>
+        </a>-->
+        <a href="#">Regisztráció</a>
+        <a href="#">Bejelentkezés</a>
+        <a href="#">Pályázatok</a>
+      </nav>
+    </div>
+
+    <aside>
+      <h2>Elmélet</h2>
+      <section>
+        <a href="{{url_for('infelm')}}">Információelmélet</a>
+        <a href="{{url_for('binary')}}">Kettes számrendszer</a>
+        <a href="{{url_for('nummat')}}">Numerikus matematika 1.</a>
+        <a href="{{url_for('r')}}">Numerikus programozás</a>
+      </section>
+
+      <h2>Hardver - Központi egység</h2>
+      <section>
+        <a href="{{url_for('logmuv')}}">Logikai műveletek és kifejezések</a>
+        <a href="{{url_for('logkapu')}}">Logikai kapuk és áramkörök</a>
+        <a href="{{url_for('aritcirc')}}">Aritmetikai áramkörök</a>
+        <a href="{{url_for('cpu')}}">CPU</a>
+        <a href="{{url_for('tarcirc')}}">Tároló áramkörök</a>
+        <a href="https://www.inf.u-szeged.hu/~tanacs/oktatas/szamitogep_architekturak_gd/index.html" target="_blank">Számítógép-architektúrák</a>
+        <a href="https://www.falstad.com/circuit/" target="_blank">Falstad - Circuit Simulator Applet</a>
+      </section>
+
+      <h2>Hardver - Gépház</h2>
+      <section>
+        <a href="{{url_for('htmagn')}}">Háttértárak</a>
+        <a href="{{url_for('alaplap')}}">Alaplap</a>
+        <a href="{{url_for('kartyak')}}">Hangkártya, videokártya, hálózati kártya</a>
+        <a href="{{url_for('kabport')}}">Adatkábelek és portok</a>
+        <a href="{{url_for('tapakku')}}">Tápegység, akkumulátor</a>
+        <a href="{{url_for('haz')}}">Ház</a>
+        <a href="{{url_for('pc')}}">Személyi számítógép</a>
+        <a href="{{url_for('biosuefi')}}">BIOS, UEFI</a>
+      </section>
+
+      <h2>Hardver - Perifériák</h2>
+      <section>
+        <a href="{{url_for('bill')}}">Billentyűzet</a>
+        <a href="{{url_for('eger')}}">Egér, touchpad</a>
+        <a href="{{url_for('printer')}}">Nyomtató</a>
+        <a href="{{url_for('monitor')}}">Monitorok és projektorok</a>
+        <a href="{{url_for('mic')}}">Mikrofonok és hangszórók</a>
+        <a href="{{url_for('fenyk')}}">Fényképező & kamera</a>
+        <a href="{{url_for('scanner')}}">Scanner</a>
+        <a href="{{url_for('digitabla')}}">Digitális tábla</a>
+        <a href="https://www.youtube.com/playlist?list=PL5S7QW1qtdUC7531m0OaQ5ucsC89yvoq5" target="_blank">AnonimInc. - Perifériák</a>
+        <a href="https://www.youtube.com/playlist?list=PL5S7QW1qtdUAIprVHAPmgt5C-rvEvKURC" target="_blank">AnonimInc. - Mobil kiegészítők</a>
+      </section>
+
+      <h2>Operációs rendszerek</h2>
+      <section>
+        <a href="{{url_for('os')}}">Operációs rendszerek</a>
+        <a href="{{url_for('fajl')}}">Fájlok, fájlrendszerek</a>
+        <a href="{{url_for('segedpr')}}">Segédprogramok</a>
+        <a href="{{url_for('windows')}}">Windows</a>
+        <a href="{{url_for('linux')}}">Linux</a>
+        <a href="{{url_for('android')}}">Android</a>
+        <a href="{{url_for('unix')}}">Unix</a>
+        <a href="{{url_for('virt')}}">Virtuális gépek és konténerek</a>
+      </section>
+
+      <h2>Oktatási anyagok</h2>
+      <section>
+        <a href="{{url_for('okt')}}">Oktatási anyagok</a>
+        <a href="{{url_for('szamtechtortenet')}}">A számítástechnika története</a>
+      </section>
+
+      <h2>Irodai szoftverek</h2>
+      <section>
+        <a href="{{url_for('tablazat')}}">Táblázatkezelés</a>
+        <a href="{{url_for('szoveg')}}">Szövegszerkesztés</a>
+        <a href="{{url_for('prezi')}}">Prezentációkészítés</a>
+        <a href="{{url_for('kiadvany')}}">Kiadványszerkesztés</a>
+        <a href="{{url_for('texlatex')}}">TeX / LaTeX</a>
+      </section>
+
+      <h2>Mikroelektronika</h2>
+      <section>
+        <a href="{{url_for('bevelektr')}}">Bevezetés az elektronikába</a>
+        <a href="{{url_for('raspberry')}}">Raspberry</a>
+        <a href="{{url_for('arduino')}}">Arduino</a>
+        <a href="{{url_for('robotika')}}">Robotika</a>
+        <a href="{{url_for('dron')}}">Drónok</a>
+      </section>
+
+      <h2>3D nyomtatás</h2>
+      <section>
+        <a href="{{url_for('nyomt3d')}}">3D nyomtatás</a>
+        <a href="dekor3d">Nemzeti lakásdekor</a>
+      </section>
+
+      <h2>Okoseszközök</h2>
+      <section>
+        <a href="{{url_for('okostelefon')}}">Okostelefonok</a>
+      </section>
+
+      <h2>Mesterséges intelligencia</h2>
+      <section>
+        <a href="{{url_for('mlnnai1')}}">Mesterséges intelligencia</a>
+        <a href="{{url_for('mlnnai2')}}">Gépi tanulás</a>
+        <a href="{{url_for('mlnnai3')}}">Neuronhálózatok</a>
+      </section>
+    </aside>
+
+    <main>
+      <h1>Informatikai tehetséggondozó program</h1>
+
+      <h3>Informatikai és távközlési alapok</h3>
+      <ol>
+        <li>Bevezetés az elektronikába (x óra)</li>
+        <li>A PC része, PC szét- és összeszerelése, bővítése (x óra)</li>
+        <li>Megelőző karbantartás és hibakeresés (x óra)</li>
+        <li>Laptopok és más eszközök tulajdonságai, hibakeresés (x óra)</li>
+        <li>Nyomtatók és egyéb perifériák</li>
+        <li>Virtualizáció és felhőtechnológiák (x óra)</li>
+        <li>Windows telepítése és konfigurációja (x óra)</li>
+        <li>A dolgok internete (x óra)</li>
+        <hr>
+        <li>Informatikai és távközlési hálózatok napjainkban (x óra)</li>
+        <li>Hálózati protokollok és modellek, végponti eszközök hálózati beállítása (x óra)</li>
+        <li>Kapcsolás Ethernet-hálózatokon, a kapcsoló alapszintű beállítása (x óra)</li>
+        <li>A hálózati réteg, IPv4-es és IPv6-os címzés, a forgalomirányító alapszintű beállítása (x óra)</li>
+        <li>A szállítási és az alkalmazási réteg (x óra)</li>
+        <li>Otthoni és kisvállalati hálózat építése és beállítása (x óra)</li>
+        <li>IT-biztonság (x óra)</li>
+        <li>Egyéb operációs rendszerek (mobil és MacOS) (x óra)</li>
+        <li>Linux alapok (x óra)</li>
+      </ol>
+
+      <h3>Ágazati alapvizsga</h3>
+      <ol>
+        <li>Informatikai és távközlési alapok interaktív teszt (30 perc)</li>
+        <li>Otthoni és kisvállalati hálózat építése és beállítása gyakorlati feladat (60 perc)</li>
+      </ol>
+    </main>
+
+    <div style="clear:both;"></div>
+
+    <script src="static/accordion.js"></script>
+  </body>
+</html>
