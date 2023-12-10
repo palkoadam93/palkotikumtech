@@ -72,8 +72,6 @@ nav a:hover {
     border-bottom: 5px solid orange;
 }
 
-nav img {display: none;}
-
 #header{
     position: sticky;
     top: 0;
