@@ -10,6 +10,11 @@ aside h1, aside h2 {
     font-family: 'Inter', sans-serif;
 }
 
+aside h2 {
+    font-size: 1.2em;
+    padding: 1em 0;
+}
+
 aside ol {line-height: 1.8em;}
 
 main h2 {
