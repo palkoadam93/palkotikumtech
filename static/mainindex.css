@@ -1,8 +1,3 @@
-/* MENU BEGIN */
-menu {
-    margin: 0;
-}
-
 menu a {
     display: block;
     text-decoration: none;
@@ -16,11 +11,3 @@ menu a:hover {
     background-image: linear-gradient(to right, rgba(255,0,0,.8), white);
     color: black;
 }
-
-#kurzus {
-    /*border-radius: 20px;*/
-    font-size: 1.5em;
-    color: black;
-    font-family: 'Dosis', sans-serif;
-}
-/* MENU END */
