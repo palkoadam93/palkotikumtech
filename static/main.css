@@ -62,7 +62,7 @@ nav a {
     display: inline-block;
     text-align: center;
     padding: 1em 0;
-    width: 10em;
+    width: 8em;
     border-bottom: 5px solid transparent;
 }
 
@@ -81,7 +81,7 @@ nav img {display: none;}
 
 @media (min-width: 768px){
     body {
-        width: 80%;
+        width: 60%;
         margin: auto;
     }
 

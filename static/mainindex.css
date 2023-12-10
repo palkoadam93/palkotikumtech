@@ -1,13 +1,20 @@
-menu a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    padding: 2em;
-    background-image: linear-gradient(to right, rgba(255,255,255,.5), rgba(255,255,255,0));
+main h2 {
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,0,0,.8), rgba(255,255,255,0));
+    padding: .5em;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
 }
 
-menu a:hover {
-    background-image: linear-gradient(to right, rgba(255,0,0,.8), white);
+main a {
+    display: block;
+    color: black;
+    cursor: pointer;
+    padding: 1em;
+    background-image: linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,.5));
+    text-decoration:dotted;
+}
+
+main a:hover {
+    background-image: linear-gradient(to right, white, rgba(255,0,0,.8));
     color: black;
 }
