@@ -5,7 +5,7 @@ aside {
     border-right:1px dotted;
 }
 
-aside h1, aside h2 {
+aside h1, aside h2, aside h3 {
     text-align: center;
     font-family: 'Inter', sans-serif;
 }
@@ -15,7 +15,19 @@ aside h2 {
     padding: 1em 0;
 }
 
-aside ol {line-height: 1.8em;}
+aside h3 {
+    font-size: 1em;
+    padding: 1em 0;
+}
+
+aside ol, aside p {line-height: 1.8em;}
+
+aside a {
+    text-decoration: none;
+    color: red;
+}
+
+aside a:hover {text-decoration: underline;}
 
 main h2 {
     background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,0,0,.8), rgba(255,255,255,0));
