@@ -3,7 +3,6 @@ body {
     background-image:url('circuit.jpg');
     background-size: 100%;
     background-attachment: fixed;
-    color: white;
 }
 
 * {

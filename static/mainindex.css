@@ -3,18 +3,27 @@
     color: black;
     padding: 1em;
     text-align:center;
-    font-family: 'Inter', sans-serif;
     border-bottom: 1px dotted;
 }
 
-#cim h1 {margin:1em;}
+#cim h1 {
+    margin:1em;
+    font-family: 'Inter', sans-serif;
+}
 
-#cim p {font-family: Arial; text-align:left;}
+#cim h2 {
+    margin: 1em 0;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+}
+
+#cim p {
+    text-align: justify;
+}
 
 aside {
     background-color: rgba(255,255,255,.8);
     padding: 0 1em 1em 1em;
-    color: black;
     border-right:1px dotted;
 }
 
@@ -30,28 +39,8 @@ aside h2 {
 
 aside ol, aside p {line-height: 1.8em;}
 
-article {background-image: linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,.2)); overflow:hidden;}
-
-aside a, article a {
-    display: block;
-    text-decoration: none;
-    color: red;
-}
-
-article a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    padding: 1em;
-    background-image: linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,.2));
-}
-
-aside a:hover {text-decoration:underline;}
-
-article a:hover {
-    background-image: linear-gradient(to right, white, rgba(255,0,0,.8));
-    color: black;
+article {
+    background-color: rgba(255,255,255,.8);
 }
 
 article h2 {
@@ -62,6 +51,28 @@ article h2 {
 }
 
 aside, article {border-bottom: 1px dotted;}
+
+aside a, article a {
+    display: block;
+    text-decoration: none;
+    color: red;
+}
+
+aside a:hover {text-decoration:underline;}
+
+article a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 1em;
+}
+
+article a:hover {
+    /*background-image: linear-gradient(to right, white, rgba(255,0,0,.8));*/
+    background-color: white;
+    color: black;
+}
 
 @media (min-width:768px){
     section {
