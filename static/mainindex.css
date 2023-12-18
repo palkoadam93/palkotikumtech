@@ -1,62 +1,71 @@
+#cim {
+    background-color: rgba(255,255,255,.8);
+    color: black;
+    padding: 1em;
+    text-align:center;
+    font-family: 'Inter', sans-serif;
+    border-bottom: 1px dotted;
+}
+
+#cim h1 {margin:1em;}
+
+#cim p {font-family: Arial; text-align:left;}
+
 aside {
     background-color: rgba(255,255,255,.8);
-    padding: 1em;
+    padding: 0 1em 1em 1em;
     color: black;
     border-right:1px dotted;
 }
 
-aside h1, aside h2, aside h3 {
+aside h1, aside h2 {
     text-align: center;
     font-family: 'Inter', sans-serif;
 }
 
 aside h2 {
-    font-size: 1.2em;
-    padding: 1em 0;
-}
-
-aside h3 {
-    font-size: 1em;
-    padding: 1em 0;
+    /*font-size: 1.2em;*/
+    padding: .5em;
 }
 
 aside ol, aside p {line-height: 1.8em;}
 
-aside a {
+article {background-image: linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,.2)); overflow:hidden;}
+
+aside a, article a {
+    display: block;
     text-decoration: none;
     color: red;
 }
 
-aside a:hover {text-decoration: underline;}
+article a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 1em;
+    background-image: linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,.2));
+}
 
-main h2 {
+aside a:hover {text-decoration:underline;}
+
+article a:hover {
+    background-image: linear-gradient(to right, white, rgba(255,0,0,.8));
+    color: black;
+}
+
+article h2 {
     background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,0,0,.8), rgba(255,255,255,0));
     padding: .5em;
     text-align: center;
     font-family: 'Inter', sans-serif;
 }
 
-main a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    padding: 1em;
-    background-image: linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,.5));
-}
-
-main a:hover {
-    background-image: linear-gradient(to right, white, rgba(255,0,0,.8));
-    color: black;
-}
+aside, article {border-bottom: 1px dotted;}
 
 @media (min-width:768px){
-    aside {
-        float: left;
-        width:50%;
-    }
-    main {
-        float: right;
-        width:50%;
+    section {
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 }
