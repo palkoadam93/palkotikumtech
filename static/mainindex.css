@@ -44,7 +44,7 @@ article {
 }
 
 article h2 {
-    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,0,0,.8), rgba(255,255,255,0));
+    background-image: linear-gradient(to right, rgba(255,255,255,0), white, rgba(255,255,255,0));
     padding: .5em;
     text-align: center;
     font-family: 'Inter', sans-serif;
