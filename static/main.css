@@ -11,7 +11,8 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to bottom right, red, rgba(255,255,255,.8));
+    /*background-image: linear-gradient(to bottom right, red, rgba(255,255,255,.8));*/
+    background-image: linear-gradient(to bottom right, red,  rgb(195,7,63));
     color: white;
     text-align: center;
     position: sticky;
@@ -50,25 +51,24 @@ header h2 {
 
 nav {
     text-align: center;
-    background-image: linear-gradient(to top, white, rgba(255,255,255,.5));
+    /*background-image: linear-gradient(to top, white, rgba(255,255,255,.5));*/
+    background-color: rgba(26,26,29,.9);
+    border-bottom: 1px solid white;
 }
 
 nav a {
     text-decoration: none;
     /*background-image: linear-gradient(to right, red, rgba(255,255,255,.8));*/
-    color: black;
     font-weight: bold;
+    color: white;
     display: inline-block;
     text-align: center;
     padding: 1em 0;
     width: 8em;
-    /*border-bottom: 5px solid transparent;*/
 }
 
 nav a:hover {
-    background-image: linear-gradient(to bottom, white, rgba(255,255,255,.5));
     color: red;
-    /*border-bottom: 5px solid orange;*/
 }
 
 /* ======== DROPDOWN MENÜ BEGIN ======== */
@@ -84,7 +84,7 @@ nav a:hover {
   
   .dropdown-content a {
     display: block;
-    background-image: linear-gradient(to bottom, white, rgba(255,255,255,.5));
+    background-color: rgb(26,26,29);
     font-weight: normal;
   }
   .dropdown:hover .dropdown-content {display: block;}
@@ -97,7 +97,7 @@ nav a:hover {
 
 @media (min-width: 768px){
     body {
-        width: 60%;
+        width: 80%;
         margin: auto;
     }
 
