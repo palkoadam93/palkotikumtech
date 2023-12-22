@@ -71,6 +71,25 @@ nav a:hover {
     color: red;
 }
 
+/* ======== DROPDOWN MENÜ BEGIN ======== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+  }
+
+  .dropdown-content a {
+    display: block;
+    background-color: rgb(26,26,29);
+    font-weight: normal;
+  }
+  .dropdown:hover .dropdown-content {display: block;}
+/* ======== DROPDOWN MENÜ END ======== */
+
 #header{
     position: sticky;
     top: 0;
