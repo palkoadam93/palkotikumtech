@@ -71,7 +71,7 @@ article h2 {
     font-family: 'Inter', sans-serif;
 }
 
-aside, article {border-bottom: 1px dotted;}
+aside {border-bottom: 1px dotted white;}
 
 aside a, article a {
     display: block;
