@@ -41,3 +41,7 @@ main iframe {
     display: block;
     margin: auto;
 }
+
+#vizsga p, #vizsga ul {
+    width: 60%;
+}
