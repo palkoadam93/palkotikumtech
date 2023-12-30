@@ -50,4 +50,5 @@ main iframe {
     article {
         border-left: 1px dotted white;
     }
+    .ptt p, .ptt ol, .ptt ul {width: 60%;}
 }
