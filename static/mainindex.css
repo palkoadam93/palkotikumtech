@@ -22,10 +22,12 @@
     text-align: justify;
 }
 
+#cim a {text-decoration: none; color: yellow;}
+#cim a:hover {text-decoration: underline;}
+
 main h1 {
     /*background-image: linear-gradient(to right, rgba(255,255,255,0),  red, rgba(255,255,255,0));*/
-    /*background-color: rgba(195,7,63,.8);*/
-    background-color: rgba(49, 27, 146, .8);
+    background-color: rgba(195,7,63,.8);
     padding: .5em;
     text-align: center;
     margin: 0;
