@@ -95,6 +95,17 @@ nav a:hover {
     top: 0;
 }
 
+
+footer {
+    background-color: rgba(195,7,63,.8);
+    padding: 1rem;
+}
+footer img {
+    display: block;
+    width: 7rem;
+    margin: auto;
+}
+
 @media (min-width: 768px){
     body {
         width: 80%;
