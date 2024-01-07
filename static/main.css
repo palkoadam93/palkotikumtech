@@ -141,10 +141,10 @@ footer a:hover {
         font-size: 4em;
     }
 
-    header h2 {
+    /*header h2 {
         letter-spacing: 30px;
         margin-right: -30px;
-    }
+    }*/
 
     nav {
         display: block;
