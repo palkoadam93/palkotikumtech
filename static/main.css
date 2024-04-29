@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-image:url('circuitkicsi.jpg');
+    /*background-image:url('circuitkicsi.jpg');
     background-size: 100%;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 }
 
 * {
@@ -10,21 +10,22 @@ body {
     box-sizing: border-box;
 }
 
-header {
+#header {
     /*background-image: linear-gradient(to bottom right, red, rgba(255,255,255,.8));*/
     background-image: linear-gradient(to bottom right, red,  rgb(195,7,63));
     color: white;
     text-align: center;
-    position: sticky;
+    /*position: sticky;
     top: 0;
+    z-index: 100;*/
 }
 
-header h1 {
+#header h1 {
     font-family: 'Julius Sans One', sans-serif;
     text-transform: uppercase;
 }
 
-header a {
+#header a {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -33,7 +34,7 @@ header a {
     display: inline;
 }
 
-header a:hover {
+#header a:hover {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -42,31 +43,12 @@ header a:hover {
     transition: 0.3s;
 }
 
-header h2 {
+#header h2 {
     font-family: 'Inter', sans-serif;
 }
 
-nav {
-    text-align: center;
-    /*background-image: linear-gradient(to top, white, rgba(255,255,255,.5));*/
-    background-color: rgba(26,26,29,.8);
-    border-bottom: 1px solid white;
-
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-}
-
-nav a {
-    text-decoration: none;
-    /*background-image: linear-gradient(to right, red, rgba(255,255,255,.8));*/
-    font-weight: bold;
-    color: white;
-    /*display: inline-block;*/
-    text-align: center;
-}
-
-nav a:hover {
-    color: red;
+header {
+    padding: 3em;
 }
 
 /* ======== DROPDOWN MENÜ BEGIN ======== */
@@ -89,11 +71,6 @@ nav a:hover {
   }
   .dropdown:hover .dropdown-content {display: block;}
 /* ======== DROPDOWN MENÜ END ======== */
-
-#header{
-    position: sticky;
-    top: 0;
-}
 
 footer {
     background-color: rgba(195,7,63,.8);
@@ -124,13 +101,17 @@ footer a:hover {
     transition: .5s;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1081px){
     body {
         width: 80%;
         margin: auto;
-        background-image:url('circuit.jpg');
+        /*background-image:url('circuit.jpg');
         background-size: 100%;
-        background-attachment: fixed;
+        background-attachment: fixed;*/
+    }
+
+    header {
+        padding: 5em;
     }
 
     header h1 {

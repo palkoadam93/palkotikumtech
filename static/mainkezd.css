@@ -1,10 +1,10 @@
+body {background-color: black;}
+
 .cim {
     /*background-color: rgba(255,255,255,.8);*/
-    background-color: rgba(26,26,29,.9);
-    color: white;
-    padding: 1rem;
+    background-color: #FF9B6A;
+    padding: 3rem;
     text-align:center;
-    border-bottom: 1px dotted;
 }
 
 .cim h1 {
@@ -28,12 +28,35 @@ section {
     display: block;
     text-align: center;
     /*margin: .2em;*/
+    /*color: white;*/
+}
+
+.sarga {
+    background: #FF5151;
+    color: black;
+}
+
+.coral {
+    background: #FF9B6A;
     color: white;
 }
+.blue {
+    background: #191970;
+    color: white;
+}
+.cyan {
+    background: cyan;
+    color: black;
+}
+.white {
+    background: white;
+    color: black;
+}
+
 
 section a {
     display: block;
-    padding: 3em 0;
+    padding: 5em 0;
     text-decoration: none;
     color: white;
     font-family: 'Inter', sans-serif;
@@ -45,7 +68,10 @@ section a:hover {
     color: black;
 }
 
-.section {background-color: rgba(26,26,29,.9);}
+.fekete {
+    color: black;
+}
+
 
 #elm {
     background-image: url('circuit-5315089_640.jpg');
@@ -77,74 +103,11 @@ section a:hover {
     background-position:center;
 }
 
-.sarga {background-color: #FF5151;}
 
-aside {
-    /*background-color: rgba(255,255,255,.8);*/
-    background-color: rgba(26,26,29,.9);
-    padding: 0 1em 1em 1em;
-    border-right:1px dotted;
-    color: white;
-}
 
-aside h1, aside h2 {
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-}
-
-aside h2 {
-    /*font-size: 1.2em;*/
-    padding: .5em;
-}
-
-aside ol, aside p {
-    line-height: 1.8em;
-    margin: 0 0 0 1em;
-}
-
-article {
-    /*background-color: rgba(255,255,255,.8);*/
-    background-color: rgba(26,26,29,.9);
-}
-
-article h2 {
-    /*background-image: linear-gradient(to right, rgba(255,255,255,0), white, rgba(255,255,255,0));*/
-    color: white;
-    border-top: 1px dotted white;
-    border-bottom: 1px dotted white;
-    padding: .5em;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-}
-
-aside {border-bottom: 1px dotted white;}
-
-aside a, article a {
-    display: block;
-    text-decoration: none;
-    color: yellow;
-}
-
-aside a:hover {text-decoration:underline;}
-
-article a {
-    display: block;
-    text-decoration: none;
-    color: yellow;
-    cursor: pointer;
-    padding: 1em;
-}
-
-article a:hover {
-    /*background-image: linear-gradient(to right, white, rgba(255,0,0,.8));*/
-    background-color: white;
-    color: black;
-}
-
-@media (min-width:768px){
+@media (min-width:1081px){
     main {
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        /*grid-template-columns: 50% 50%;*/
+        grid-template-columns: 50% 50%;
     }
 }
