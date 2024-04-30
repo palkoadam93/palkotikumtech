@@ -2,7 +2,8 @@ body {background-color: black;}
 
 .cim {
     /*background-color: rgba(255,255,255,.8);*/
-    background-color: #FF9B6A;
+    /*background-color: #FF9B6A;*/
+    background: white;
     padding: 3rem;
     text-align:center;
 }
@@ -103,6 +104,11 @@ section a:hover {
     background-position:center;
 }
 
+#aiwoman {
+    background-image: url('artificial-intelligence-2167835_640.jpg');
+    background-size:cover;
+    background-position:center;
+}
 
 
 @media (min-width:1081px){
