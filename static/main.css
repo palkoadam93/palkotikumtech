@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    /*background-image:url('circuitkicsi.jpg');
+    background-image:url('circuitkicsi.jpg');
     background-size: 100%;
-    background-attachment: fixed;*/
+    background-attachment: fixed;
 }
 
 * {
@@ -105,9 +105,9 @@ footer a:hover {
     body {
         width: 80%;
         margin: auto;
-        /*background-image:url('circuit.jpg');
+        background-image:url('circuit.jpg');
         background-size: 100%;
-        background-attachment: fixed;*/
+        background-attachment: fixed;
     }
 
     header {
