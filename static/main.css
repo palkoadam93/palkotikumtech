@@ -63,6 +63,8 @@ nav a:hover {
     color: white;
 }
 
+hr {margin: 0;}
+
 #aktiv {
     background-color: rgb(239, 62, 54);
     color: white;
