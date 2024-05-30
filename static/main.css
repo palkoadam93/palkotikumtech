@@ -1,80 +1,89 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image:url('circuitkicsi.jpg');
-    background-size: 100%;
-    background-attachment: fixed;
-}
-
-* {
+    font-family: "Source Sans 3", sans-serif;
     margin: 0;
-    box-sizing: border-box;
-}
-
-#header {
-    /*background-image: linear-gradient(to bottom right, red, rgba(255,255,255,.8));*/
-    background-image: linear-gradient(to bottom right, red,  rgb(195,7,63));
-    color: white;
-    text-align: center;
-    /*position: sticky;
-    top: 0;
-    z-index: 100;*/
-}
-
-#header h1 {
-    font-family: 'Julius Sans One', sans-serif;
-    text-transform: uppercase;
-}
-
-#header a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    background: none;
-    color: white;
-    display: inline;
-}
-
-#header a:hover {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    background: none;
-    color: orange;
-    transition: 0.3s;
-}
-
-#header h2 {
-    font-family: 'Inter', sans-serif;
+    color: #0881A3;
+    background-color: #F5FFFA;
 }
 
 header {
-    padding: 3em;
+    color: rgb(239, 62, 54);
+    padding: 0 .5rem;
 }
 
-/* ======== DROPDOWN MENÜ BEGIN ======== */
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-content {
+header img {
     display: none;
-    position: absolute;
-  }
+}
 
-  .dropdown-content a {
+header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 3px black;
+    padding: 2rem 0;
+}
+
+main {
+    /*background-color: rgba(26,26,29,.8);*/
+    /*color: white;*/
+    padding: 1em;
+}
+
+aside {padding-right: 1rem;}
+aside h1, aside p {padding-left: .5rem;}
+
+section h1 {
+    color: rgb(239, 62, 54);
+}
+
+#t {
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px dotted;
+}
+
+aside a, section a {
+    text-decoration: none;
+    color: orange;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #002379;
     display: block;
-    background-color: rgb(26,26,29);
-    font-weight: normal;
-    border-bottom: 1px dotted white;
-    text-align: left;
-  }
-  .dropdown:hover .dropdown-content {display: block;}
-/* ======== DROPDOWN MENÜ END ======== */
+    text-decoration: none;
+    padding: .5rem;
+    font-size: 100%;
+}
+
+nav a:hover {
+    background-color: rgb(239, 62, 54);
+    color: white;
+}
+
+#aktiv {
+    background-color: rgb(239, 62, 54);
+    color: white;
+}
+
+#fo {
+    color: orange;
+    border-top: 1px solid #0881A3;
+}
+
+h3 {border-bottom: 1px solid;}
+
+iframe {
+    display: block;
+    margin: auto;
+}
 
 footer {
-    background-color: rgba(195,7,63,.8);
+    border-top: 1px solid #0881A3;
     padding: 1rem;
+    color: rgb(239, 62, 54);
 }
 footer img {
     display: block;
@@ -83,57 +92,53 @@ footer img {
 }
 
 footer p {
-    color: white;
     text-align:center;
-    margin-bottom: 1rem;
     font-weight: bold;
-    font-family: 'Julius Sans One', sans-serif;
 }
 
 footer a {
     text-decoration: none;
-    font-size: 80%;
-    color: yellow;
+    color: orange;
 }
 
 footer a:hover {
+    background-color: orange;
     color: white;
     transition: .5s;
 }
 
-@media (min-width: 1081px){
+@media(min-width:1081px){
     body {
         width: 80%;
         margin: auto;
-        background-image:url('circuit.jpg');
-        background-size: 100%;
-        background-attachment: fixed;
     }
-
     header {
-        padding: 5em;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        border-bottom: 1px solid;
     }
-
-    header h1 {
-        font-size: 4em;
+    header a {padding: 2rem 0;}
+    header a:hover {
+        background-image: linear-gradient(#F5FFFA, lightgray, #F5FFFA);
+        transition: 1s;
     }
-
-    /*header h2 {
-        letter-spacing: 30px;
-        margin-right: -30px;
-    }*/
-
-    nav {
+    header img {
         display: block;
-        grid-template-columns:none;
+        border: 1px solid black;
+        border-radius: 50%;
+        max-width: 50%;
+        height: auto;
+        margin: auto;
+        box-shadow: 5px 5px lightblue;
+    }
+    header h1 {
+        text-align: center;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        padding: 0; 
     }
 
-    nav a {
-        padding: 1em 0;
-        width: 8em;
-        display: inline-block;
-    }
-    .dropdown-content a {
-        padding: .5rem;
-    }
+    p, li {text-align: justify;}
 }
