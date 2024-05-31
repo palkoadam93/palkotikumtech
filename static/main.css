@@ -120,10 +120,6 @@ footer a:hover {
         border-bottom: 1px solid;
     }
     header a {padding: 2rem 0;}
-    header a:hover {
-        background-image: linear-gradient(#F5FFFA, lightgray, #F5FFFA);
-        transition: 1s;
-    }
     header img {
         display: block;
         border: 1px solid black;
