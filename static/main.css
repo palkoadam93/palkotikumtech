@@ -123,11 +123,11 @@ iframe {
     transition: ease-in-out .2s;
 }
 
-.italapok a, .network a {
+#bemutat .italapok a, #bemutat .network a {
     background-image: linear-gradient(to left, rgba(255,255,255,0), white);
 }
 
-.os a, .ai a {
+#bemutat .os a, #bemutat .ai a {
     text-align: right;
     background-image: linear-gradient(to right, rgba(255,255,255,0), white);
 }
