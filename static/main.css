@@ -56,18 +56,6 @@ main {
 /*aside {padding-right: 1rem;}*/
 aside h1, aside p {padding-left: .5rem;}
 
-section {padding: 0 1rem;}
-
-section h1 {
-    color: rgb(239, 62, 54);
-}
-
-#t {
-    list-style-type: none;
-    padding: 0;
-    border-bottom: 1px dotted;
-}
-
 aside a, section a {
     text-decoration: none;
     color: orange;
@@ -85,6 +73,7 @@ nav a {
     text-decoration: none;
     padding: .5rem;
     font-size: 100%;
+    border-radius: 6px;
 }
 
 nav a:hover {
@@ -102,6 +91,18 @@ hr {margin: 0;}
 #fo {
     color: orange;
     border-top: 1px solid #0881A3;
+}
+
+section {padding: 0 1rem;}
+
+section h1 {
+    color: rgb(239, 62, 54);
+}
+
+#t {
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px dotted;
 }
 
 h3 {border-bottom: 1px solid;}
@@ -199,4 +200,7 @@ footer a:hover {
     }
 
     p, section li {text-align: justify;}
+
+    .R {float: right; width: 50%;}
+    .L {float: left; width: 50%;}
 }
