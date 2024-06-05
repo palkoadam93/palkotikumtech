@@ -30,20 +30,32 @@ header h1 {
     background-size: 100%;
 }
 
-.network {
-    background-image: url('globe-8704013_1280.jpg');
-    background-size: 100%;
-    background-position: center;
-}
-
 .os {
     background-image: url('os-720223_1920.jpg');
     background-size: 100%;
     background-position: center;
 }
 
+.network {
+    background-image: url('globe-8704013_1280.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.rendszuzem {
+    background-image: url('technology-8676538_640.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
 .ai {
     background-image: url('hand-4-7014643_1920.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.office {
+    background-image: url('laptop-5714421_640.jpg');
     background-size: 100%;
     background-position: center;
 }
@@ -135,11 +147,11 @@ iframe {
     transition: ease-in-out .2s;
 }
 
-#bemutat .italapok a, #bemutat .network a {
+#bemutat .italapok a, #bemutat .network a, #bemutat .ai a {
     background-image: linear-gradient(to left, rgba(255,255,255,0), white);
 }
 
-#bemutat .os a, #bemutat .ai a {
+#bemutat .os a, #bemutat .rendszuzem a, #bemutat .office a {
     text-align: right;
     background-image: linear-gradient(to right, rgba(255,255,255,0), white);
 }
