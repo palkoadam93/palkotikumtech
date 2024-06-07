@@ -7,6 +7,8 @@ body {
 
 header {
     color: white;
+    border-bottom: 1px solid;
+    padding: 0 .5rem;
 }
 
 #fofejlec {
@@ -131,22 +133,7 @@ iframe {
 
 /* ====== INDEX BEMUTATKOZÓ OLDAL BEGIN ====== */
 
-/*#bemutat a {
-    display: block;
-    padding: 3rem;
-    font-size: 3rem;
-    color: black;
-    text-shadow: 2px 2px 3px white;
-    font-weight: bold;
-}*/
-
-.bal, .jobb {border-bottom: 1px solid;}
-
-#bemutat p {
-    background-color: rgba(255,255,255,.8);
-    /*padding: 2rem;
-    margin: 0 50% 0 0;*/
-}
+#bemutat div {background-color: #F5FFFA;}
 
 #bemutat a:hover {
     text-decoration: none;
@@ -156,6 +143,8 @@ button {
     background-color: orange;
     border: 1px solid orange;
     padding: 0;
+    display: block;
+    margin-left: 2rem;
 }
 
 button a {
@@ -214,7 +203,7 @@ footer a:hover {
         grid-template-columns: 20% 80%;
     }
     header a {
-        padding: 1rem 0;
+        padding: 2rem 0;
     }
     header img {
         display: block;
@@ -234,8 +223,6 @@ footer a:hover {
         padding: 0; 
     }
 
-
-
     p, section li {text-align: justify;}
 
     /* aloldalakon */
@@ -243,10 +230,19 @@ footer a:hover {
     .L {float: left; width: 50%;}
 
     /* főoldalon */
-    .jobb img {
-        float: right;
-        width: 40%;
+    .bal {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 2rem 0;
+    }
 
+    .jobb {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin: 2rem 0;
+    }
+
+    .jobb img {
         width: 400px;
         height: 400px;
         object-fit: cover;
@@ -254,16 +250,12 @@ footer a:hover {
         border-radius: 50%;
     }
     .jobb p {
-        float: left;
-        width: 50%;
         padding: 2rem;
         border-top: 1px solid;
         border-left: 1px solid;
     }
     
     .bal img {
-        float: left;
-        width: 40%;
         padding: 2rem;
 
         width: 400px;
@@ -273,8 +265,6 @@ footer a:hover {
         border-radius: 50%;
     }
     .bal p {
-        float: right;
-        width: 50%;
         padding: 2rem;
         border-top: 1px solid;
         border-right: 1px solid;
