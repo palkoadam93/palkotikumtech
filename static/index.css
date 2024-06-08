@@ -1,3 +1,12 @@
+#fulszoveg {
+    font-family: "Roboto Condensed", sans-serif;
+    color: rgb(239, 62, 54);
+    margin: 1rem;
+    padding: 1rem;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
 #bemutat div {background-color: #F5FFFA;}
 
 #bemutat a:hover {
