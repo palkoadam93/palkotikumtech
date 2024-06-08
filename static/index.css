@@ -11,6 +11,15 @@
     text-decoration: none;
 }
 
+.baljobb {display: block;}
+.baljobb aside {display: none;}
+#szurke {color: grey;}
+#sarga {color: orange;}
+#lila {color:blueviolet;}
+#zold {color: green;}
+#piros {color:crimson;}
+#citrom {color:yellowgreen;}
+
 .bal img, .jobb img {display: none;}
 
 button {
@@ -42,30 +51,44 @@ button a:hover {
     .fulszoveg {
         display: grid;
         grid-template-columns: 50% 50%;
-
+    }
+    .fulszoveg p {
+        padding: 1rem 2rem;
+        background-color: rgb(239, 62, 54);
+        color: white;
+        margin: 0;
+    }
+    #fulkep {
         background-image: url("ai-generated-8602502_1920.jpg");
         background-repeat: no-repeat;
         background-size:cover;
         background-position: right;
     }
-    .fulszoveg p {
-        padding: 1rem 2rem;
-        background-color: rgba(239, 62, 54, .2);
-        color: white;
-        margin: 0;
+
+    main {
+        display: block;
+    }
+
+    .baljobb {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        padding: 0;
+        margin: 2rem 0;
+    }
+    .baljobb aside {
+        display: block;
+        font-weight: bold;
     }
 
     .bal h1, .jobb h1 {margin-left:2rem;}
     .bal {
         display: grid;
         grid-template-columns: 40% 60%;
-        margin: 2rem 0;
     }
 
     .jobb {
         display: grid;
         grid-template-columns: 60% 40%;
-        margin: 2rem 0;
     }
 
     .jobb img {
