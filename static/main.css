@@ -130,41 +130,6 @@ iframe {
     margin: auto;
 }
 
-/* ====== INDEX BEMUTATKOZÓ OLDAL BEGIN ====== */
-
-#bemutat div {background-color: #F5FFFA;}
-
-#bemutat a:hover {
-    text-decoration: none;
-}
-
-button {
-    background-color: orange;
-    border: 1px solid orange;
-    padding: 0;
-    display: block;
-    margin-left: 2rem;
-}
-
-button a {
-    display: block;
-    color: white;
-    padding: .5rem;
-}
-
-button:hover {
-    background-color: white;
-    border: 1px solid orange;
-}
-
-button a:hover {
-    text-decoration: none;
-    color: orange;
-    
-}
-
-/* ====== INDEX BEMUTATKOZÓ OLDAL END ====== */
-
 footer {
     border-top: 1px solid #0881A3;
     padding: 1rem;
@@ -227,45 +192,4 @@ footer a:hover {
     /* aloldalakon */
     .R {float: right; width: 50%;}
     .L {float: left; width: 50%;}
-
-    /* főoldalon */
-    .bal {
-        display: grid;
-        grid-template-columns: 40% 60%;
-        margin: 2rem 0;
-    }
-
-    .jobb {
-        display: grid;
-        grid-template-columns: 60% 40%;
-        margin: 2rem 0;
-    }
-
-    .jobb img {
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-
-        border-radius: 50%;
-    }
-    .jobb p {
-        padding: 2rem;
-        border-top: 1px solid;
-        border-left: 1px solid;
-    }
-    
-    .bal img {
-        padding: 2rem;
-
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-
-        border-radius: 50%;
-    }
-    .bal p {
-        padding: 2rem;
-        border-top: 1px solid;
-        border-right: 1px solid;
-    }
 }
