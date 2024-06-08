@@ -1,6 +1,5 @@
 .fulszoveg p {
     font-family: "Roboto Condensed", sans-serif;
-    font-weight: bold;
     font-size: 1.2rem;
     padding: 0 1rem;
 }
@@ -51,18 +50,16 @@ button a:hover {
     .fulszoveg {
         display: grid;
         grid-template-columns: 50% 50%;
+
+        background-image: url("laptop-5673901_1920.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
     }
     .fulszoveg p {
         padding: 1rem 2rem;
-        background-color: rgb(239, 62, 54);
-        color: white;
+        background-color: rgba(255, 255, 255, .8);
         margin: 0;
-    }
-    #fulkep {
-        background-image: url("ai-generated-8602502_1920.jpg");
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position: right;
     }
 
     main {
