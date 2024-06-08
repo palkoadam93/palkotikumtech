@@ -157,6 +157,11 @@ footer a:hover {
     transition: .5s;
 }
 
+#zaro {
+    color: rgb(239, 62, 54);
+    font-weight: bold;
+}
+
 @media(min-width:1081px){
     body {
         width: 80%;
