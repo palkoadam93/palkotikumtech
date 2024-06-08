@@ -76,7 +76,7 @@ button a:hover {
     .jobb p {
         padding: 2rem;
         border-top: 1px solid;
-        /*border-left: 1px solid;*/
+        border-left: 1px solid;
     }
     
     .bal img {
