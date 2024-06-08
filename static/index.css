@@ -1,8 +1,8 @@
-.fulszoveg {
+.fulszoveg p {
     font-family: "Roboto Condensed", sans-serif;
-    color: rgb(239, 62, 54);
-    padding: 0 2rem;
     font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 1rem;
 }
 
 #bemutat div {background-color: #F5FFFA;}
@@ -40,8 +40,19 @@ button a:hover {
 
 @media(min-width:1081px){
     .fulszoveg {
-        margin: 0 20rem;
-        border-left: 1px solid;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        background-image: url("ai-generated-8602502_1920.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: right;
+    }
+    .fulszoveg p {
+        padding: 1rem 2rem;
+        background-color: rgba(239, 62, 54, .2);
+        color: white;
+        margin: 0;
     }
 
     .bal h1, .jobb h1 {margin-left:2rem;}
@@ -65,7 +76,7 @@ button a:hover {
     .jobb p {
         padding: 2rem;
         border-top: 1px solid;
-        border-left: 1px solid;
+        /*border-left: 1px solid;*/
     }
     
     .bal img {
