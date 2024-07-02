@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/Palkotikumicon.png">
+
+    <title>Linux szerver</title>
+    <link rel="stylesheet" href="../static/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><img src="../static/Palkotikumlogo2.png" alt="p"></a>
+      <h1 class="network">Linux szerver</h1>
+    </header>
+
+    <main>
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="bemeneti.html">Szintfelmérő teszt</a></li>
+            <li><a href="#" id="aktiv">Kurzusok</a></li>
+            <li><a href="zaro.html">Záró teszt</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="ieta25.html">A szállítási és az alkalmazási réteg</a></li>
+            <li><a href="halo24.html">Statikus és dinamikus címfordítás lehetőségei</a></li>
+            <li><a href="windowsserver.html">Windows Server</a></li>
+            <li><a href="#" id="aktiv">Ubuntu Server</a></li>
+            <li><a href="winlinint.html">Windows és Linux integrációja</a></li>
+            <li><a href="alkuz.html">Alkalmazások üzemeltetése</a></li>
+            <li><a href="felho.html">Felhőszolgáltatások</a></li>
+          </ul>
+        </nav>
+
+        <h1>Linux szerver telepítése és üzemeltetése (9+62 óra)</h1>
+
+        <p>A témakör célja a Linux szerverek telepítési és menedzselési feladatainak, a tipikus szerverszolgáltatások beállításának megismertetése. A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+        <ul>
+          <li>Képes a Linux szerver telepítéséhez szükséges hardverkövetelmények meghatározására.</li>
+          <li>Tud Linux szervert telepíteni fizikai és virtuális gépre.</li>
+          <li>Ismeri a szerver betöltési folyamatát, a hagyományos és a systemd által vezérelt módot is.</li>
+          <li>Tudja, mi a boot manager feladata, képes annak telepítésére és beállítására.</li>
+          <li>Ismeri a futási szintek jellemzőit, képes váltani a futási szintek között, képes újraindítani, leállítani a szervert.</li>
+          <li>Ismeri a Linux fájlrendszerek jellemzőit, képes adott fájlrendszert létrehozni a lemezen.</li>
+          <li>Ismeri a Linux rendszereknél használt lemezparticionálási módokat, a szükséges segédprogramokat.</li>
+          <li>Ismeri a fájlok és könyvtárak tulajdonságait, képes fájlkezelési műveletek elvégzésére.</li>
+          <li>Ismeri a megosztott és a rendszerkönyvtárak szerepét, helyét a rendszerben.</li>
+          <li>Képes a fájlrendszer integritásának fenntartására, lemezellenőrzésre, tisztában van a lemez monitorozásának alapjaival.</li>
+          <li>Ismeri a fájlhozzáférés beállítási lehetőségeit, képes a jogokat konfigurálni, az alapjogokon kívül ACL-ek segítségével is.</li>
+          <li>Képes lemezkvóták beállítására és ellenőrzésére.</li>
+          <li>Ismeri a hardlink és a szimbolikus link fogalmát, képes ilyeneket létrehozni, törölni.</li>
+          <li>Ismeri a csomagkezelés elterjedtebb módszereit (RPM, APT), képes a csomagkezelő programok használatával telepíteni és törölni alkalmazásokat, illetve azok adatait lekérdezni.</li>
+          <li>Képes programok telepítésére forráskódból is.</li>
+          <li>Ismeri a parancssori munkához szükséges shellbeállításokat és a napi munkához szükséges alapvető segédprogramokat.</li>
+          <li>Képes szövegfeldolgozásra szövegszerkesztővel és segédprogramokkal is (grep, cut, sed stb.).</li>
+          <li>Ismeri az alapvető reguláris kifejezéseket, és képes azokkal szövegillesztésre.</li>
+          <li>Ismeri a szabványos bemenet, szabványos kimenet, szabványos hibacsatorna fogalmát, az átirányítási módokat, csővezetékek (pipeline) kialakítását összetett feladatok ellátásához.</li>
+          <li>Képes felhasználók és csoportok létrehozására, menedzselésére és törlésére.</li>
+          <li>Képes a folyamatok, processzek listázására, leállítására, jelzések küldésére, prioritás megváltoztatására.</li>
+          <li>Ismeri a rendszernaplózás célját, tudja kezelni a helyi naplófájlokat, és képes hálózaton keresztüli naplózásra is.</li>
+          <li>Ismeri egy elterjedt grafikus felhasználói felület beállításait.</li>
+          <li>Képes időzített és ütemezett folyamatokat létrehozni és módosítani (at, cron).</li>
+          <li>Képes a nyomtatás beállítására, nyomtatási sor kezelésére.</li>
+          <li>Képes a szerver hálózati címzésének és alapszolgáltatásainak beállítására.</li>
+          <li>Képes DHCP-kliens és -szerver beállítására.</li>
+          <li>Ismeri a névfeloldás működését, képes DNS-szervert telepíteni és konfigurálni.</li>
+          <li>Ismeri a hálózati címfordítás működését, képes címfordításokat megvalósítani (SNAT, DNAT, port forwarding).</li>
+          <li>Ismeri a biztonságos adattovábbítás lehetőségeit (OpenSSH, GnuPG, X11 tunnels), és képes azokat használni.</li>
+          <li>Képes forgalomirányítás beállítására Linux szerver segítségével (quagga).</li>
+          <li>Képes biztonsági mentést végezni a rendszer és a felhasználók adatairól, képes rendszervisszaállítás elvégzésére biztonsági mentésből.</li>
+          <li>Képes webkiszolgáló telepítésére és konfigurálására (Apache, Nginx), háttéradatbázis-kiszolgálóval és PHP-támogatással.</li>
+          <li>Képes adatbázis-kiszolgáló telepítésére és beállítására (MySQL, MariaDB, PostgreSQL).</li>
+          <li>Képes tűzfalszabályok létrehozására és módosítására, valamint proxyszolgáltatások konfigurálására (iptables, squid).</li>
+          <li>Képes levelezési szolgáltatások telepítésére és konfigurálására helyi és hálózatközi levelezéshez (SMTP-protokoll, postfix, sendmail, exim, POP3, IMAP).</li>
+          <li>Képes egyszerűbb shell-szkriptek megírására, ismeri az ezekben alkalmazható vezérlési szerkezeteket.</li>
+        </ul>
+
+        <h1>Linux szerver</h1>
+
+        <h3>DJ Online - Ubuntu Server</h3>
+        <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLQNaF61h2XXUPIkUSH5SxHnewugPnJV9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+    
+        <h3>SanFranciscobol Jottem - Linux szerver környezet</h3>
+        <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?si=hTmEUNKhMVLFT9Wh&amp;list=PLyriihBWoulz2uiWIOmLVA8ksRDrJd8Os" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+    
+        <h3>Ubuntu Server kézikönyv</h3>
+        <p><a href="https://drive.google.com/file/d/1-OUwyMzzSfxN_Zou9bGlY6CA0KXntfCX/view?usp=sharing" target=_blank>1. Bevezetés</a></p>
+        <p><a href="https://drive.google.com/file/d/1z8PMHBzv68i9xIP8byI7PAdSHBRclqpE/view?usp=sharing" target=_blank>2. Telepítés</a></p>
+        <p><a href="https://drive.google.com/file/d/1YbNv4L79TpFFdaLfpsDrQrMVz4SMRxak/view?usp=sharing" target=_blank>3. Csomagkezelés</a></p>
+        <p><a href="https://drive.google.com/file/d/17MMtHD8gHI0YvpU6m4UtWFHKd-i4Zrpy/view?usp=sharing" target=_blank>4. Hálózatkezelés</a></p>
+        <p><a href="https://drive.google.com/file/d/1j0iLab4_JlIZLLbe84cm694uiz96_3Yp/view?usp=sharing" target=_blank>5. Távoli adminisztráció</a></p>
+        <p><a href="https://drive.google.com/file/d/1RLgVJ_a40_XQgsv7dN5z3moi25HvQyGZ/view?usp=sharing" target=_blank>6. Hálózati hitelesítés</a></p>
+        <p><a href="https://drive.google.com/file/d/1BsuBRlDL1aXt7P_uilLGF9yGfixtPe-5/view?usp=sharing" target=_blank>7. Tartománynév-szolgáltatás (DNS)</a></p>
+        <p><a href="https://drive.google.com/file/d/1dSS9YspnUjNbK1ubXpiJthTzuYnvO8aK/view?usp=sharing" target=_blank>8. Biztonság</a></p>
+        <p><a href="https://drive.google.com/file/d/1tVFBdlqruL88waWldUbDcub6PiVJruxN/view?usp=sharing" target=_blank>9. Monitorozás</a></p>
+        <p><a href="https://drive.google.com/file/d/1-cXobhRZbLUxqZ4G5JTHQ8ejvCF-0Ryn/view?usp=sharing" target=_blank>10. Webkiszolgálók</a></p>
+        <p><a href="https://drive.google.com/file/d/1gEb52ggeb1fzgY-b0oEDIeZ2V5AilFH5/view?usp=sharing" target=_blank>11. Adatbázisok</a></p>
+        <p><a href="https://drive.google.com/file/d/1Ow3RMeY8fm8XtXeKALfoeeC1RcyMZ7cS/view?usp=sharing" target=_blank>12. LAMP alkalmazások</a></p>
+        <p><a href="https://drive.google.com/file/d/12XhIVUB3r8NQHqFG2jpYP27w-TetUTnT/view?usp=sharing" target=_blank>13. Fájlkiszolgálók</a></p>
+        <p><a href="https://drive.google.com/file/d/1BFNTN_QWH59t5GlIaktJa3GJDvaHX9wg/view?usp=sharing" target=_blank>14. E-mail szolgáltatások</a></p>
+        <p><a href="https://drive.google.com/file/d/1VmpLqrdJzE8CHldWgjC8S0IPSetdz6G8/view?usp=sharing" target=_blank>15. Csevegőalkalmazások</a></p>
+        <p><a href="https://drive.google.com/file/d/110Kt3_A45rTWwPJTirLM0JVCQlyr2daZ/view?usp=sharing" target=_blank>16. Verziókezelő rendszerek</a></p>
+        <p><a href="https://drive.google.com/file/d/1dr_3uughvZa4oU7MZEHtAFNkk0C4EgK5/view?usp=sharing" target=_blank>17. Windows hálózat</a></p>
+        <p><a href="https://drive.google.com/file/d/1KV1LWsjtVnzmsYoozykcQrczUiJd470C/view?usp=sharing" target=_blank>18. Biztonsági mentés</a></p>
+        <p><a href="https://drive.google.com/file/d/1KnRlO-5rmv73xy8-0A8z-Ur4ydfGg-WB/view?usp=sharing" target=_blank>19. Virtualizáció</a></p>
+        <p><a href="https://drive.google.com/file/d/11yKDhbac7hMztGEVoIcD-iG9KBR0wiXs/view?usp=sharing" target=_blank>20. Fürtözés</a></p>
+        <p><a href="https://drive.google.com/file/d/1quSZxszflEzLexVQVbtxZY1Lgx_Gjaom/view?usp=sharing" target=_blank>21. VPN</a></p>
+        <p><a href="https://drive.google.com/file/d/1Ka-d1tlfI7VjmWV6KistKwvlTut3BSyc/view?usp=sharing" target=_blank>22. További hasznos alkalmazások</a></p>
+        <p><a href="https://drive.google.com/file/d/1kIvSNxO5BMqoU2lP6K1Xg_lj7XjMzLDi/view?usp=sharing" target=_blank>Függelék</a></p>
+    
+        <h3>Unix és Linux alapismeretek rendszergazdáknak (1)</h3>
+        <p><a href="https://drive.google.com/file/d/1ERis1ppTXDXUg3Ro8FBbE4h6Icc3kXq4/view?usp=share_link" target=_blank>1. Alapfogalmak: parancssor, grafikus felület, munkakörnyezetek</a></p>
+        <p><a href="https://drive.google.com/file/d/1gvHHLg4ShquWMTRuB1wgz7srcwUokts4/view?usp=share_link" target=_blank>2. Miért beszélünk egyáltalán parancssorról?</a></p>
+        <p><a href="https://drive.google.com/file/d/1s9q3VEMG7tbV0UUTV0pPl9pelgeSZu27/view?usp=share_link" target=_blank>3. Felhasználók és csoportok, Unix típusú rendszer használata</a></p>
+        <p><a href="https://drive.google.com/file/d/1ZfFFvV-4xKwRoEywJ9CPKL2PKkX0WEOv/view?usp=share_link" target=_blank>4. Fájlok, könyvtárak, dzsóker karakterek</a></p>
+        <p><a href="https://drive.google.com/file/d/182Nx9FM99G1Gv861iML5jsRmxOZlkG3O/view?usp=share_link" target=_blank>5. Fájlkezelő parancsok</a></p>
+        <p><a href="https://drive.google.com/file/d/1_V6Z3XGHVcFmAEEEK0Cm2eQBrtLbCBpW/view?usp=share_link" target=_blank>6. Jogosultságok, azok használata</a></p>
+        <p><a href="https://drive.google.com/file/d/13XGyWMs1r8ea5ncTnFwJu_ij9C1oqLxT/view?usp=share_link" target=_blank>7. Folyamatok és kezelésük</a></p>
+        <p><a href="https://drive.google.com/file/d/1oUwADEQiAFuo8aDkwmrLjrsbX85PNX4t/view?usp=share_link" target=_blank>8. A hardverek elérésének unixok, linuxok módja</a></p>
+        <p><a href="https://drive.google.com/file/d/1wVBV2JHZB4D13rQusc0QEJn4VP-_HNuy/view?usp=share_link" target=_blank>9. Reguláris minták és használatuk röviden</a></p>
+        <p><a href="https://drive.google.com/file/d/1-zEn7GpItRwpZNfdflPb3F2kUHlrRGZt/view?usp=share_link" target=_blank>10. A shell programozása minimalista megközelítésben</a></p>
+        <p><a href="https://drive.google.com/file/d/1k3HwdGYV8-8rk425RnvI0piJHwMV-lWV/view?usp=share_link" target=_blank>11. Alapszintű hibakeresés</a></p>
+    
+        <h3>Linux rendszerek alapvető beállításai, üzemeltetése (2)</h3>
+        <p><a href="https://drive.google.com/file/d/1rrySVMiDYAnaebe34SXlAvR0ja20RkaU/view?usp=share_link" target=_blank>1. Virtualizációról dióhéjban, mini virtuális tesztlabor kialakítása</a></p>
+        <p><a href="https://drive.google.com/file/d/1TXjJOk4ZDuem0tCwRkwNal3aUq54Tg6n/view?usp=share_link" target=_blank>2. Lemezkezelés. Partíciók, LVM, RAID, md-eszközök</a></p>
+        <p><a href="https://drive.google.com/file/d/1lixGR0efzwT3iB9ZNdxW1IDiGDC73VnZ/view?usp=share_link" target=_blank>3. Fájlrendszerek típusai és kezelése, swap használata</a></p>
+        <p><a href="https://drive.google.com/file/d/1ITcSmblvJGR98bCm1WBLKiLNS9O4_6tg/view?usp=share_link" target=_blank>4. Az operációs rendszer telepítése</a></p>
+        <p><a href="https://drive.google.com/file/d/1n8aQPt-407QXvFKVl0At7SSQrNvsbwM6/view?usp=share_link" target=_blank>5. Csomagkezelés</a></p>
+        <p><a href="https://drive.google.com/file/d/1KtHVq0T9KpbBYSiinXpXnzXpB4MFz0Dk/view?usp=share_link" target=_blank>6. Alap hálózat infrastruktúra</a></p>
+        <p><a href="https://drive.google.com/file/d/15PMwBvJ83CHEgGNm-nEY-Ej5fm6UNxxU/view?usp=share_link" target=_blank>7. Egy szerver alapvető beállításai</a></p>
+        <p><a href="https://drive.google.com/file/d/1wokWp70WXcCl8dC6_xAk-ZzqiW4aXloP/view?usp=share_link" target=_blank>8. Távoli elérés: ssh</a></p>
+        <p><a href="https://drive.google.com/file/d/1yCCWqo-8MIGokDtak9FMGEDRGi9ZHlh3/view?usp=share_link" target=_blank>9. A naplózó alrendszer, naplók elemzése</a></p>
+        <p><a href="https://drive.google.com/file/d/1BmENFE0-uLZKc_OGrv_DtaUJSawwJ2YH/view?usp=share_link" target=_blank>10. A hálózati szolgáltatások monitorozása: Nagios</a></p>
+        <p><a href="https://drive.google.com/file/d/1pPzuDz_lWh0m0btEZKVuva38zuX7HB4-/view?usp=share_link" target=_blank>11. Mentések és archiválás</a></p>
+        <p><a href="https://drive.google.com/file/d/19-Di-81SxzRvGJXtX3wfvx8zpouExv7K/view?usp=share_link" target=_blank>12. Rendszerindítás, init, rendszerkomponensek konfigurálása (/etc)</a></p>
+        <p><a href="https://drive.google.com/file/d/1mR4gkT-Rrjw0ZbkkNAuwkWkyqy6a0ZAU/view?usp=share_link" target=_blank>13. Alapszintű hálózati hibakeresés</a></p>
+        <p><a href="https://drive.google.com/file/d/1wBcE6RZLb0KH7rLyQ-xVpseoion5-e9A/view?usp=share_link" target=_blank>14. IP-multiplexing, Bridge, VLAN, Bonding, és a hálózatkonfigurálás 3-féle módja</a></p>
+        <p><a href="https://drive.google.com/file/d/1-zTuKGXMcbqLk32QaYn877WqhFrIcIno/view?usp=share_link" target=_blank>15. Sávszélesség szabályozás</a></p>
+        <p><a href="https://drive.google.com/file/d/1Fvbeiq250IPA2-tmAdA4lIM_cInNf8AW/view?usp=share_link" target=_blank>16. Határvédelem, alapvető túzfal beállítások (netfilter és előtétjei)</a></p>
+        <p><a href="https://drive.google.com/file/d/1NJOkc-Y_oyGO8ys6sTpIiSfKPKGIUBAX/view?usp=share_link" target=_blank>17. Magas rendelkezésre állás alapok</a></p>
+        <p><a href="https://drive.google.com/file/d/1Vyik1rV01z93bWcY-iJOPjmbmx00xRuH/view?usp=share_link" target=_blank>18. A PAM hitelesítési keretrendszer</a></p>
+    
+        <h3>Hálózati szolgáltatások szabad szoftverekkel (3)</h3>
+        <p><a href="https://drive.google.com/file/d/187f7_q_Kac5U6vYH65YlYOpKAtJvmp3y/view?usp=share_link" target=_blank>1. Vállalati levelezés, spamszűrés és vírusszűrés</a></p>
+        <p><a href="https://drive.google.com/file/d/1A9NKc4A1aNbeSlKEnPyGp3V0yxCza1gI/view?usp=share_link" target=_blank>2. Általános célú hálózati szerver: az inetd és xinetd</a></p>
+        <p><a href="https://drive.google.com/file/d/1gN0mLHLJcI_rsIR_aJxQw93Pr440z291/view?usp=share_link" target=_blank>3. Központi időszinkron szerver: NTP szerver</a></p>
+        <p><a href="https://drive.google.com/file/d/11T7BAxET0NzSWvhxPRoBfG3Mq-7Bb388/view?usp=share_link" target=_blank>4. Névfeloldás a hálózaton: DNS szerver (dnsmasq és BIND)</a></p>
+        <p><a href="https://drive.google.com/file/d/12BNL5eKAkhrcmS08p9GiQZg1euAIbsKs/view?usp=share_link" target=_blank>5. Kliensek hálózati paramétereinek szolgáltatása: DHCP-szerver</a></p>
+        <p><a href="https://drive.google.com/file/d/1MtZ0Sygt9MwZ1VlJrGchA5fuB2PWBn3S/view?usp=share_link" target=_blank>6. Webszerver feladata, telepítése és üzemeltetése</a></p>
+        <p><a href="https://drive.google.com/file/d/1oVll45jEjRgwu3WnDWRBP1X0jI6NIjwc/view?usp=share_link" target=_blank>7. FTP-szerver feladata, telepítése és üzemeltetése</a></p>
+        <p><a href="https://drive.google.com/file/d/1saZCpSTDmR-Y8T5F5fMvPAPvqx5jiruU/view?usp=share_link" target=_blank>8. Fájl szerver feladata, telepítése, üzemeltetése</a></p>
+        <p><a href="https://drive.google.com/file/d/1QX2kH_qSJt05sZNZbCbYRQ_hHNSSYFIg/view?usp=share_link" target=_blank>9. Hálózati nyomtatás, szkenner szerver</a></p>
+        <p><a href="https://drive.google.com/file/d/1CGxHzdDqt-sDl6RMETq_8G4eZoDT5sBy/view?usp=share_link" target=_blank>10. Adatbázis-kezelés</a></p>
+        <p><a href="https://drive.google.com/file/d/1T7QXLTNPv28HagEgM57d_DUb6N30GIdp/view?usp=share_link" target=_blank>11. Webproxy</a></p>
+        <p><a href="https://drive.google.com/file/d/1Zx87JdnjYwDxeHiOMsDEaa_oqc4W1tv1/view?usp=share_link" target=_blank>12. VPN beállítás: IPSec és OpenVPN</a></p>
+        <p><a href="https://drive.google.com/file/d/1X_wcryJ8C5NuOmLBARVnaztpjB_zyumd/view?usp=share_link" target=_blank>13. Közös címtár LDAP segítségével</a></p>
+      </section>
+    </main>
+    <footer>
+      <p>Csak az önálló tanulás bír tartós értékkel. &#x2022; <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
+      <img src="../static/cc.logo.large.png" alt="cc">
+    </footer>
+  </body>
+</html>
