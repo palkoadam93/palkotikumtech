@@ -22,27 +22,23 @@
 .bal img, .jobb img {display: none;}
 
 button {
-    background-color: orange;
     border: 1px solid orange;
     padding: 0;
     display: block;
     margin-left: 2rem;
+    background-color: #F5FFFA;
 }
 
 button a {
     display: block;
-    color: white;
+    color: orange;
     padding: .5rem;
-}
-
-button:hover {
-    background-color: white;
-    border: 1px solid orange;
 }
 
 button a:hover {
     text-decoration: none;
-    color: orange;
+    color: white;
+    background-color: orange;
     
 }
 
