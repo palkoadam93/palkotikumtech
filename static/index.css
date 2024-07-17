@@ -4,10 +4,21 @@
     padding: 0 1rem;
 }
 
-#bemutat div {background-color: #F5FFFA;}
+/*#bemutat div {background-color: #F5FFFA;}*/
 
 #bemutat a:hover {
     text-decoration: none;
+}
+
+#index h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: rgb(239, 62, 54);
+}
+
+#index h2 {
+    color: rgb(239, 62, 54);
+    border-bottom: 1px solid;
 }
 
 .baljobb {display: block;}
@@ -19,33 +30,47 @@
 #piros {color:crimson;}
 #citrom {color:yellowgreen;}
 
-.bal img, .jobb img {display: none;}
+#elvalaszto {
+    max-width: 30%;
+    display: block;
+    margin: 3rem auto;
+    border-radius: 50%;
+}
 
 button {
-    border: 1px solid orange;
     padding: 0;
     display: block;
     margin-left: 2rem;
-    background-color: #F5FFFA;
 }
 
 button a {
     display: block;
     color: orange;
+    background-color: white;
+    border: 1px solid orange;
     padding: .5rem;
 }
 
 button a:hover {
-    text-decoration: none;
     color: white;
     background-color: orange;
-    
+    border: 1px solid orange;
+    text-decoration: none;
+}
+
+#elvalaszto {
+    max-width: 15%;
+    display: block;
+    margin: 3rem auto;
+    border-radius: 50%;
 }
 
 @media(min-width:1081px){
     .fulszoveg {
         display: grid;
         grid-template-columns: 50% 50%;
+        padding: 0 10%;
+        /*ha ezt a fulszoveg div elemnek adjuk, akkor a fulszoveg felének veszi a 10%-át!!!*/
 
         background-image: url("laptop-5673901_1920.jpg");
         background-repeat: no-repeat;
@@ -53,56 +78,38 @@ button a:hover {
         background-size:cover;
     }
     .fulszoveg p {
-        padding: 1rem 2rem;
-        background-color: rgba(255, 255, 255, .8);
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, .9);
         margin: 0;
     }
 
-    main {
+    #elvalaszto {
+        max-width: 5%;
+    }
+
+    #index {
         display: block;
     }
 
-    .baljobb {
-        display: grid;
-        grid-template-columns: 20% 80%;
-        padding: 0;
-        margin: 2rem 0;
-    }
-    .baljobb aside {
-        display: block;
-        font-weight: bold;
+    .begin {
+        padding-top: 3rem;
     }
 
-    .bal h1, .jobb h1 {margin-left:2rem;}
-    .bal {
+    .alcim {
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 50% 50%;
+        /*height: 30rem;*/
+    }
+    .alcim h1, .alcim p {
+        margin: 0;
+        background-color: rgba(255, 255, 255, .8);
+        padding: 1rem 2rem;
     }
 
-    .jobb {
-        display: grid;
-        grid-template-columns: 60% 40%;
+    /*#alcimezmegaz*/
+    h1 {
+        padding: 3rem 0 3rem 20%;
     }
 
-    .jobb img {
-        display: inline;
-        width:100%;
-        border-radius: 50%;
-    }
-    .jobb p {
-        padding: 2rem;
-        border-top: 1px solid;
-        border-left: 1px solid;
-    }
-    
-    .bal img {
-        display: inline;
-        width:100%;
-        border-radius: 50%;
-    }
-    .bal p {
-        padding: 2rem;
-        border-top: 1px solid;
-        border-right: 1px solid;
-    }
+    #index h2 {border: none;}
 }

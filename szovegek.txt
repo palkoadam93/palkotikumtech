@@ -1,0 +1,50 @@
+Fedezze fel az irodai szoftverek széleskörű lehetőségeit, amelyek megkönnyítik a mindennapi munkavégzést és növelik a hatékonyságot. Oldalunkon bemutatjuk a legnépszerűbb irodai programokat, azok funkcióit és használatát, hogy Ön is profi módon kezelhesse a dokumentumokat, táblázatokat és prezentációkat.
+
+Fedezze fel a rendszer-üzemeltetés világát, ahol a számítógépes rendszerek hatékony működtetésének és karbantartásának alapjait sajátíthatja el. Oldalunkon bemutatjuk a legfontosabb üzemeltetési feladatokat, eszközöket és technikákat, hogy Ön is sikeresen kezelhesse és felügyelhesse informatikai rendszereit.
+
+Merüljön el a hálózati ismeretek világában, ahol a számítógépes hálózatok működésének alapjait és technológiáit ismerheti meg. Oldalunkon részletes útmutatókat és gyakorlati példákat talál a hálózati protokollokról, eszközökről és biztonsági megoldásokról, hogy jobban megértse a modern hálózatok működését.
+#TCP/IP
+#router
+#switch
+#LAN
+#WAN
+#Wi-Fi
+#Ethernet
+#IP-cím
+#DNS
+#hálózati biztonság
+
+Ismerje meg a mikroelektronika és robotika izgalmas világát, ahol a miniatűr elektronikai alkatrészek és intelligens gépek tervezésének alapjait sajátíthatja el. Oldalunkon részletes útmutatókat és projektötleteket talál, amelyek segítenek elindulni a mikroelektronikai áramkörök és robotikai rendszerek tervezésében és építésében.
+<p>#áramkör</p>
+            <p>#multiméter</p>
+            <p>#oszcilloszkóp</p>
+            <p>#Arduino</p>
+            <p>#Raspberry</p>
+            <p>#MicroBit</p>
+            <p>#robotika</p>
+            <p>#drónok</p>
+            <p>#mesterséges intelligencia</p>
+            <p>#okosotthon</p>
+
+Ismerje meg az operációs rendszerek alapjait, amelyek a számítógépek működésének alapját képezik. Oldalunkon bemutatjuk a legnépszerűbb operációs rendszereket, azok funkcióit és felépítését, valamint praktikus tippeket kínálunk a hatékony használatukhoz.
+<p>#Windows</p>
+            <p>#Linux</p>
+            <p>#macOS</p>
+            <p>#kernel</p>
+            <p>#parancssor</p>
+            <p>#GUI</p>
+            <p>#rendszerfrissítés</p>
+            <p>#virtualizáció</p>
+            <p>#biztonsági mentés</p>
+            <p>#rendszerbeállítások</p>
+
+<p>#processzor</p>
+            <p>#memória</p>
+            <p>#alaplap</p>
+            <p>#GPU</p>
+            <p>#SSD</p>
+            <p>#HDD</p>
+            <p>#BIOS</p>
+            <p>#perifériák</p>
+            <p>#hűtés</p>
+            <p>#bővítőkártya</p>

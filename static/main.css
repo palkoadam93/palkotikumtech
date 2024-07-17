@@ -6,8 +6,9 @@ body {
 }
 
 header {
-    color: white;
+    color: rgb(239, 62, 54);
     /*padding: 0 2rem;*/
+    border-bottom: 1px solid;
 }
 
 #fofejlec {
@@ -17,7 +18,13 @@ header {
 }
 
 header img {
-    display: none;
+    display: block;
+    border: 1px solid black;
+    border-radius: 50%;
+    max-width: 20%;
+    height: auto;
+    margin: 1rem auto 0 auto;
+    box-shadow: 5px 5px lightblue;
 }
 
 header h1 {
@@ -25,7 +32,35 @@ header h1 {
     text-shadow: 2px 2px 3px black;
     padding: 3rem 0;
     margin: 0;
+    text-align: center;
 }
+
+/* =================================== FŐMENÜ ================================== */
+
+.menu {
+    /*background-color: cornflowerblue;*/
+    background-color: rgba(8,129,163,.8);
+    overflow: hidden;
+}
+.menu a {
+    display: block;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: white;
+    /*color: cornflowerblue;*/
+    color: #0881A3;
+}
+
+#akt {
+    background-color: white;
+    /*color: cornflowerblue;*/
+    color: #0881A3;
+}
+
+/* =================================== FŐMENÜ ================================== */
 
 main {
     /*background-color: rgba(26,26,29,.8);*/
@@ -53,24 +88,15 @@ nav a {
     text-decoration: none;
     padding: .5rem;
     font-size: 100%;
-    border-radius: 6px;
 }
 
-nav a:hover {
-    background-color: rgb(239, 62, 54);
-    color: white;
-}
+nav a:hover {color: orangered;}
 
 hr {margin: 0;}
 
 #aktiv {
-    background-color: rgb(239, 62, 54);
+    background-color: orangered;
     color: white;
-}
-
-#fo {
-    color: orange;
-    border-top: 1px solid #0881A3;
 }
 
 section h1 {color: rgb(239, 62, 54);}
@@ -117,9 +143,8 @@ section h1 {color: rgb(239, 62, 54);}
     background-position: center;
 }
 
-h3 {
-    border-bottom: 1px solid;
-}
+h3 {border-bottom: 1px solid;}
+.alap h3 {border-bottom: none;}
 
 section {padding: 0 1rem;}
 
@@ -163,17 +188,18 @@ footer a:hover {
 }
 
 @media(min-width:1081px){
-    body {
+    /*body {
         width: 80%;
         margin: auto;
-    }
+    }*/
     header {
+        padding: 0 10%;
         display: grid;
         grid-template-columns: 20% 80%;
     }
-    header a {
-        padding: 2rem 0;
-    }
+
+    header a {padding: 2rem 0;}
+
     header img {
         display: block;
         border: 1px solid black;
@@ -183,18 +209,18 @@ footer a:hover {
         margin: auto;
         box-shadow: 5px 5px lightblue;
     }
-    header h1 {
-        text-align: center;
-    }
+
+    header h1 {text-align: center;}
+
     main {
         display: grid;
         grid-template-columns: 20% 80%;
-        padding: 0; 
+        padding: 0 10%;
     }
 
-    p, section li {text-align: justify;}
+    #bemutat {padding: 0;}
 
-    /* aloldalakon */
-    .R {float: right; width: 50%;}
-    .L {float: left; width: 50%;}
+    section div {padding: 0 10%;}
+
+    p, section li {text-align: justify;}
 }
