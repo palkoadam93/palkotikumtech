@@ -48,3 +48,5 @@ Ismerje meg az operációs rendszerek alapjait, amelyek a számítógépek műk�
             <p>#perifériák</p>
             <p>#hűtés</p>
             <p>#bővítőkártya</p>
+
+Fedezze fel a számítógépes architektúrák világát, ahol a számítógépek működésének alapelveit és felépítését ismerheti meg. Oldalunkon részletes útmutatókat talál a processzorok, memóriarendszerek és más hardverkomponensek működéséről, hogy mélyebb betekintést nyerhessen a számítógépek belső működésébe.
