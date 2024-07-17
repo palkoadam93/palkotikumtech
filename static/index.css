@@ -77,9 +77,11 @@ button a:hover {
         background-position: center;
         background-size:cover;
     }
+    .fulszoveg div {
+        background-color: rgba(255, 255, 255, .9);
+    }
     .fulszoveg p {
         padding: 1rem;
-        background-color: rgba(255, 255, 255, .9);
         margin: 0;
     }
 
