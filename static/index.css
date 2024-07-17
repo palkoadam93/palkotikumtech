@@ -73,6 +73,7 @@ button a:hover {
         /*ha ezt a fulszoveg div elemnek adjuk, akkor a fulszoveg felének veszi a 10%-át!!!*/
 
         background-image: url("laptop-5673901_1920.jpg");
+        background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
         background-size:cover;
