@@ -77,10 +77,6 @@ aside a, section a, article a {
 
 /* =================================== ALMENÜ ================================== */
 
-nav {
-    background-color: rgba(255, 255, 255, .8);
-}
-
 nav ul {
     list-style-type: none;
     padding: 0;
