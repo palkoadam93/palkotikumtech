@@ -115,7 +115,7 @@ section h1 {color: orangered;}
 section a:hover {text-decoration: underline;}
 
 h3 {border-bottom: 1px solid;}
-section h3, article h3 {border-bottom: none;}
+#kezdolap h3, article h3 {border-bottom: none;}
 
 iframe {
     display: block;
