@@ -102,6 +102,7 @@ hr {margin: 0;}
 
 /* =================================== ALMENÜ ================================== */
 
+section {padding: 0 1rem;} /*ezt az aloldalak miatt tettem bele*/
 section h1 {color: orangered;}
 
 #t {
@@ -192,8 +193,6 @@ footer a:hover {
         grid-template-columns: 20% 80%;
         padding: 0 10%; 
     }
-
-    section {padding: 0 2rem;} /*ezt a menüs aloldalak tartalom-szekciója kedvéért*/
 
     p, section li {text-align: justify;}
 }

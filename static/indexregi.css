@@ -1,3 +1,5 @@
+.fulszoveg p {font-size: 120%;}
+
 a, a:hover {
     text-decoration: none;
 }
@@ -19,7 +21,7 @@ section h3, article h3 {
     font-size: 200%;
 }
 
-section img, #alkezdo img, article img {display: none;}
+section img, article img {display: none;}
 
 button {
     border: none;
@@ -52,12 +54,11 @@ button a:hover {
         display: grid;
         grid-template-columns: 50% 50%;
         padding: 0 10%;
-        /*height: 30rem;*/
     }
-    .alcim h1, .alcim p {
+    .alcim p {
+        padding: 1rem;
         margin: 0;
-        background-color: rgba(255, 255, 255, .8);
-        padding: 1rem 2rem;
+        background-color: rgba(255, 255, 255, .9);
     }
     #bev {
         background-image: url("laptop-5673901_1920.jpg");
@@ -107,7 +108,7 @@ button a:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
     }
 
-    section img, #alkezdo img, article img {display: inline; width: 100%;}
+    section img, article img {display: inline; width: 100%;}
 
     #elvalaszto {max-width: 5%;}
 }
