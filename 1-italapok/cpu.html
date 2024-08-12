@@ -41,13 +41,25 @@
         </nav>
       </aside>
       <section>
-        <h1>A processzor</h1>
+        <p>Tartalom</p>
+        <ul id="t">
+          <li><a href="#cpu">A processzor</a></li>
+          <li><a href="#ut">Utasításkészlet</a></li>
+          <li><a href="#alu">ALU (Aritmetikai-logikai egység) és CU (Vezérlő egység)</a></li>
+          <li><a href="#tul">A processzor tulajdonságai</a></li>
+          <li><a href="#anyagok">Anyagok</a></li>
+          <li><a href="#uni">Az univerzális processzor architektúrája - Intel 4004 jelentősége</a></li>
+          <li><a href="#intelamd">Az Intel és az AMD jellemzői</a></li>
+          <li><a href="#spec">Specifikus processzorok</a></li>
+        </ul>
+
+        <h1 id="cpu">A processzor</h1>
 
         <p>A processzor (CPU, Central Processing Unit) a számítógép „agya”, amely végrehajtja az utasításokat és feldolgozza az adatokat. A processzor a számítógép központi eleme, amely irányítja a többi komponens működését, és elvégzi az összes alapvető számítási feladatot. A modern processzorok rendkívül összetett, nagy teljesítményű áramkörök, amelyek számos kulcsfontosságú tulajdonsággal rendelkeznek, hogy biztosítsák a gyors és hatékony működést.</p>
 
-        <h1>Utasításkészlet (ISA - Instruction Set Architecture)</h1>
+        <h1 id="ut">Utasításkészlet</h1>
 
-        <p>Az <a href="http://hu.wikipedia.org/wiki/Utasításkészlet" target="_blank">utasításkészlet</a> (ISA) határozza meg a processzor által végrehajtható alapvető műveletek készletét, például az összeadás, kivonás, adatmozgatás és logikai műveletek. Az ISA a hardver és a szoftver közötti interfészként működik, mivel a szoftver utasításait a processzor az ISA-n keresztül értelmezi és hajtja végre. Az utasításkészlet meghatározza a processzor architektúráját, és két fő típusát különböztetjük meg: a RISC (Reduced Instruction Set Computer) és a CISC (Complex Instruction Set Computer) architektúrákat.</p>
+        <p>Az <a href="http://hu.wikipedia.org/wiki/Utasításkészlet" target="_blank">utasításkészlet</a> (ISA - Instruction Set Architecture) határozza meg a processzor által végrehajtható alapvető műveletek készletét, például az összeadás, kivonás, adatmozgatás és logikai műveletek. Az ISA a hardver és a szoftver közötti interfészként működik, mivel a szoftver utasításait a processzor az ISA-n keresztül értelmezi és hajtja végre. Az utasításkészlet meghatározza a processzor architektúráját, és két fő típusát különböztetjük meg: a RISC (Reduced Instruction Set Computer) és a CISC (Complex Instruction Set Computer) architektúrákat.</p>
 
         <h3>Egy processzor utasításkészlete:</h3>
         <ul>
@@ -66,13 +78,13 @@
         <p>A <strong>RISC</strong> (Reduced Instruction Set Computer - egyszerűsített utasításkészletű számítógép) architektúra az egyszerű, gyorsan végrehajtható utasításokra épít, amelyek minimalizálják a processzor komplexitását és növelik a végrehajtási sebességet. A RISC processzorok kevesebb, de optimalizált utasítást használnak, így a végrehajtási idő rövidebb lehet, és gyakran magasabb az energiahatékonyságuk is.</p>
         <p>A <strong>CISC</strong> (Complete Instruction Set Computer - teljes utasításkészletű számítógép) architektúra ezzel szemben bonyolultabb utasításokat kínál, amelyek egyetlen utasítással több műveletet is végre tudnak hajtani. Ez az architektúra a programozók számára egyszerűbbé teszi a fejlesztést, mivel kevesebb utasítást kell megírniuk, ugyanakkor a processzor bonyolultságát növeli. A CISC processzorok jellemzően több tranzisztort és erőforrást igényelnek, ami magasabb fogyasztást és hőtermelést eredményezhet.</p>
 
-        <h1>ALU (Aritmetikai-logikai egység) és CU (Vezérlő egység)</h1>
+        <h1 id="alu">ALU (Aritmetikai-logikai egység) és CU (Vezérlő egység)</h1>
 
         <p>A processzor két alapvető részegységből áll: az aritmetikai-logikai egységből (ALU) és a vezérlő egységből (CU). Az ALU felelős a számítási műveletek, például az összeadás, kivonás, szorzás, osztás, valamint a logikai műveletek (AND, OR, NOT) végrehajtásáért. Az ALU a CPU egyik legfontosabb része, mivel itt történik az adatok tényleges feldolgozása.</p>
 
         <p>A vezérlő egység (CU) irányítja a processzor működését, és vezérli a program végrehajtását. A CU feladata, hogy dekódolja az utasításokat, majd koordinálja az ALU, a memóriák és a bemeneti/kimeneti eszközök közötti adatmozgásokat. Ez az egység határozza meg, hogy a processzor melyik utasítást hajtja végre és milyen sorrendben.</p>
 
-        <h1>A processzor tulajdonságai</h1>
+        <h1 id="tul">A processzor tulajdonságai</h1>
 
         <ul>
           <li><strong>Órajel (Clock Speed):</strong> Az órajel határozza meg a processzor működési sebességét, vagyis hogy hány műveletet képes végrehajtani másodpercenként. Az órajelet gigahertzben (GHz) mérik, és minél magasabb az órajel, annál több műveletet képes végrehajtani a processzor másodpercenként. Azonban az órajel növekedésével a hőtermelés is nő, ezért a hűtési megoldások is kulcsfontosságúak.</li>
@@ -82,7 +94,7 @@
           <li><strong>Cache memória:</strong> A cache egy gyors, kis kapacitású memória a processzor belsejében, amely az adatok és utasítások ideiglenes tárolására szolgál. A cache csökkenti a memóriaelérési időt azáltal, hogy az aktuálisan leggyakrabban használt adatokat a processzorhoz közelebb tárolja. A cache szintek (L1, L2, L3) hatékonysága nagyban befolyásolja a processzor teljesítményét.</li>
         </ul>
 
-        <h1>Anyagok</h1>
+        <h1 id="anyagok">Anyagok</h1>
         <p><a href="https://drive.google.com/file/d/1tqNQqWFlM9rEJeIGG5DVoil2xFKb7wL_/view?usp=sharing" target=_blank>Nagy László: Mikroprocesszor architektúrák</a></p>
         <p><a href="https://drive.google.com/file/d/1vALLuErQ6HOdVWzpWgt_gaWZHUgNplUe/view?usp=sharing" target=_blank>Máté István Zsolt: A processzor és csatlakoztatása</a></p>
         <p><a href="https://drive.google.com/file/d/1atdArevH58pmxnf-QtEu_LRrFytyu5h2/view?usp=sharing" target=_blank>Nagy László: A mikroprocesszorok, be- és kiszerelésük, karbantartási feladatok</a></p>
@@ -106,13 +118,13 @@
         <h3>PowerCert - Thermal Compound Paste, Heat Sink, Air vs Water Cooling Explained</h3>
         <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pzsPWY-ofQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
 
-        <h1>Az univerzális processzor architektúrája - Intel 4004 jelentősége</h1>
+        <h1 id="uni">Az univerzális processzor architektúrája - Intel 4004 jelentősége</h1>
 
         <p>Az <strong>Intel 4004</strong>, amelyet 1971-ben mutattak be, az első kereskedelmi forgalomban kapható mikroprocesszor volt, és mérföldkőnek számít a számítástechnika történetében. Ez a 4 bites processzor volt az első, amely egyetlen chipre integrálta a számítógép központi feldolgozó egységét, és ezzel megnyitotta az utat a modern mikroprocesszorok és a személyi számítógépek kifejlesztése előtt. Az Intel 4004 megmutatta, hogy egy processzor képes egyetlen chipen kezelni a számítógépes feladatokat, ami forradalmasította a számítógépes ipart, és elindította a miniatürizálás és a mikroelektronika korszakát.</p>
 
         <p>MARK, Z, ABC, ENIAC, EDVAC, UNIVAC</p>
         
-        <h1>Az Intel és az AMD jellemzői</h1>
+        <h1 id="intelamd">Az Intel és az AMD jellemzői</h1>
 
         <p>Az Intel és az AMD két vezető cég a processzortermelés terén, és bár mindkettő a számítástechnikai ipar élvonalába tartozik, különböző megközelítéseket alkalmaznak a processzorok fejlesztésében. Az alábbiakban bemutatjuk a két cég jellemzőit és a processzoraik közötti főbb különbségeket.</p>
 
@@ -152,7 +164,7 @@
           <li><strong>Piaci részesedés és felhasználói bázis:</strong> Az Intel hosszú ideig dominálta a piacon, de az AMD a Ryzen sorozattal és az EPYC processzorokkal jelentős piaci részesedést szerzett, és egyre nagyobb népszerűségnek örvend a felhasználók és a vállalatok körében.</li>
         </ul>
 
-        <h1>Specifikus processzorok</h1>
+        <h1 id="spec">Specifikus processzorok</h1>
         <p>Hangkártya</p>
         <p>Videókártya</p>
         <p>Hálózati kártya</p>
