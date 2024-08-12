@@ -41,9 +41,15 @@
         </nav>
       </aside>
       <section>
-        <h1>CPU</h1>
+        <h1>A processzor</h1>
 
-        <h3><a href="http://hu.wikipedia.org/wiki/Utasításkészlet" target="_blank">Utasításkészlet</a></h3>
+        <p>A processzor (CPU, Central Processing Unit) a számítógép „agya”, amely végrehajtja az utasításokat és feldolgozza az adatokat. A processzor a számítógép központi eleme, amely irányítja a többi komponens működését, és elvégzi az összes alapvető számítási feladatot. A modern processzorok rendkívül összetett, nagy teljesítményű áramkörök, amelyek számos kulcsfontosságú tulajdonsággal rendelkeznek, hogy biztosítsák a gyors és hatékony működést.</p>
+
+        <h2>Utasításkészlet (ISA - Instruction Set Architecture)</h2>
+
+        <p>Az <a href="http://hu.wikipedia.org/wiki/Utasításkészlet" target="_blank">utasításkészlet</a> (ISA) határozza meg a processzor által végrehajtható alapvető műveletek készletét, például az összeadás, kivonás, adatmozgatás és logikai műveletek. Az ISA a hardver és a szoftver közötti interfészként működik, mivel a szoftver utasításait a processzor az ISA-n keresztül értelmezi és hajtja végre. Az utasításkészlet meghatározza a processzor architektúráját, és két fő típusát különböztetjük meg: a RISC (Reduced Instruction Set Computer) és a CISC (Complex Instruction Set Computer) architektúrákat.</p>
+
+        <h3>Utasításkészlet</h3>
         <ul>
           <li>LOAD a number from RAM into the CPU (egy szám betöltése a memóriából a processzorba)</li>
           <li>ADD two numbers together (két szám összeadása)</li>
@@ -56,18 +62,24 @@
         </ul>
 
         <h3>Kétféle utasításkészlet</h3>
-        <ul>
-          <li>RISC: Reduced Instruction Set Computer - egyszerűsített utasításkészletű számítógép</li>
-          <li>CISC: Complete Instruction Set Computer - teljes utasításkészletű számítógép</li>
-        </ul>
 
-        <h3>Tulajdonságok</h3>
+        <p>A <strong>RISC</strong> (Reduced Instruction Set Computer - egyszerűsített utasításkészletű számítógép) architektúra az egyszerű, gyorsan végrehajtható utasításokra épít, amelyek minimalizálják a processzor komplexitását és növelik a végrehajtási sebességet. A RISC processzorok kevesebb, de optimalizált utasítást használnak, így a végrehajtási idő rövidebb lehet, és gyakran magasabb az energiahatékonyságuk is.</p>
+        <p>A <strong>CISC</strong> (Complete Instruction Set Computer - teljes utasításkészletű számítógép) architektúra ezzel szemben bonyolultabb utasításokat kínál, amelyek egyetlen utasítással több műveletet is végre tudnak hajtani. Ez az architektúra a programozók számára egyszerűbbé teszi a fejlesztést, mivel kevesebb utasítást kell megírniuk, ugyanakkor a processzor bonyolultságát növeli. A CISC processzorok jellemzően több tranzisztort és erőforrást igényelnek, ami magasabb fogyasztást és hőtermelést eredményezhet.</p>
+
+        <h2>ALU (Aritmetikai-logikai egység) és CU (Vezérlő egység)</h2>
+
+        <p>A processzor két alapvető részegységből áll: az aritmetikai-logikai egységből (ALU) és a vezérlő egységből (CU). Az ALU felelős a számítási műveletek, például az összeadás, kivonás, szorzás, osztás, valamint a logikai műveletek (AND, OR, NOT) végrehajtásáért. Az ALU a CPU egyik legfontosabb része, mivel itt történik az adatok tényleges feldolgozása.</p>
+
+        <p>A vezérlő egység (CU) irányítja a processzor működését, és vezérli a program végrehajtását. A CU feladata, hogy dekódolja az utasításokat, majd koordinálja az ALU, a memóriák és a bemeneti/kimeneti eszközök közötti adatmozgásokat. Ez az egység határozza meg, hogy a processzor melyik utasítást hajtja végre és milyen sorrendben.</p>
+
+        <h2>A processzor tulajdonságai</h2>
+
         <ul>
-          <li>Órajel</li>
-          <li>Hány bites</li>
-          <li>Magok száma</li>
-          <li>Busz</li>
-          <li>Cache</li>
+          <li><strong>Órajel (Clock Speed):</strong> Az órajel határozza meg a processzor működési sebességét, vagyis hogy hány műveletet képes végrehajtani másodpercenként. Az órajelet gigahertzben (GHz) mérik, és minél magasabb az órajel, annál több műveletet képes végrehajtani a processzor másodpercenként. Azonban az órajel növekedésével a hőtermelés is nő, ezért a hűtési megoldások is kulcsfontosságúak.</li>
+          <li><strong>Bitek száma:</strong> A processzor bitmélysége meghatározza, hogy milyen szélességű adatokat képes egyszerre feldolgozni. A 32 bites processzorok 32 bites adatokat kezelnek egyszerre, míg a 64 bites processzorok kétszer annyit. A bitmélység növelése lehetővé teszi nagyobb adatmennyiség gyorsabb feldolgozását, ami különösen fontos a modern alkalmazásokban.</li>
+          <li><strong>Magok száma:</strong> A processzorok magokból állnak, amelyek mindegyike önálló feldolgozóegységként működik. Egy többmagos processzor több műveletet képes párhuzamosan végrehajtani, így növeli a teljesítményt és a hatékonyságot. A többmagos architektúrák különösen fontosak a modern számítástechnikai feladatokban, amelyek gyakran több szálon futó programokat igényelnek.</li>
+          <li><strong>Busz:</strong> A buszok felelősek az adatok mozgatásáért a processzor és a memória, illetve más komponensek között. A buszok szélessége, azaz hány bitet képes egyszerre továbbítani, nagyban befolyásolja a rendszer teljesítményét. A szélesebb buszok nagyobb adatátviteli sebességet biztosítanak, ami gyorsabb adatfeldolgozást eredményez.</li>
+          <li><strong>Cache memória:</strong> A cache egy gyors, kis kapacitású memória a processzor belsejében, amely az adatok és utasítások ideiglenes tárolására szolgál. A cache csökkenti a memóriaelérési időt azáltal, hogy az aktuálisan leggyakrabban használt adatokat a processzorhoz közelebb tárolja. A cache szintek (L1, L2, L3) hatékonysága nagyban befolyásolja a processzor teljesítményét.</li>
         </ul>
 
         <h1>Anyagok</h1>
@@ -93,19 +105,59 @@
     
         <h3>PowerCert - Thermal Compound Paste, Heat Sink, Air vs Water Cooling Explained</h3>
         <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pzsPWY-ofQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
-    
-        <h3>Vezérlőegység</h3>
-        <p>Control Unit, CU</p>
-    
-        <h3>Univerzális processzor architektúrája</h3>
-    
+
+        <h2>Az univerzális processzor architektúrája - Intel 4004 jelentősége</h2>
+
+        <p>Az <strong>Intel 4004</strong>, amelyet 1971-ben mutattak be, az első kereskedelmi forgalomban kapható mikroprocesszor volt, és mérföldkőnek számít a számítástechnika történetében. Ez a 4 bites processzor volt az első, amely egyetlen chipre integrálta a számítógép központi feldolgozó egységét, és ezzel megnyitotta az utat a modern mikroprocesszorok és a személyi számítógépek kifejlesztése előtt. Az Intel 4004 megmutatta, hogy egy processzor képes egyetlen chipen kezelni a számítógépes feladatokat, ami forradalmasította a számítógépes ipart, és elindította a miniatürizálás és a mikroelektronika korszakát.</p>
+
         <p>MARK, Z, ABC, ENIAC, EDVAC, UNIVAC</p>
-        <p>Intel, AMD</p>
         
+        <h2>Az Intel és az AMD jellemzői</h2>
+
+        <p>Az Intel és az AMD két vezető cég a processzortermelés terén, és bár mindkettő a számítástechnikai ipar élvonalába tartozik, különböző megközelítéseket alkalmaznak a processzorok fejlesztésében. Az alábbiakban bemutatjuk a két cég jellemzőit és a processzoraik közötti főbb különbségeket.</p>
+
+        <h2>Intel</h2>
+
+        <ol>
+          <li><strong>Architektúra:</strong> Az Intel processzorok a CISC (Complex Instruction Set Computer) architektúrára építenek, amely bonyolultabb utasításkészleteket használ, lehetővé téve több művelet végrehajtását egyetlen utasítással. Az Intel processzorok számos utasítást tartalmaznak, amelyek az összetett feladatok gyorsabb végrehajtását célozzák meg.</li>
+          <li><strong>Utasításkészlet:</strong> Az Intel a saját x86/x64 utasításkészletét használja, amely széles körben elterjedt és kompatibilis a legtöbb alkalmazással és operációs rendszerrel.</li>
+          <li><strong>Órajel:</strong> Az Intel processzorok híresek a magas órajelük és fejlett turbóboost technológiájuk révén, amely dinamikusan növeli az órajelet az igényeknek megfelelően.</li>
+          <li><strong>Cache:</strong> Az Intel processzorok több szintű cache-t tartalmaznak, mint például L1, L2 és L3 cache, amely a gyors adatelérés érdekében optimalizált.</li>
+          <li><strong>Magok és szálak:</strong> Az Intel processzorok általában magas órajel-gyorsaságot és sok magot kínálnak, és jól optimalizáltak az egy- és több szálú teljesítményre is. A cég a Hyper-Threading technológiát is alkalmazza, amely lehetővé teszi, hogy egyetlen mag két szálon dolgozzon.</li>
+          <li><strong>Fogyasztás és hőmérséklet:</strong> Az Intel processzorok általában alacsonyabb TDP-vel (Thermal Design Power) rendelkeznek, ami azt jelenti, hogy kevesebb hőt termelnek, ami segíti a hatékony hűtést.</li>
+        </ol>
+
+        <p>Főbb termékcsaládok: Core i3, i5, i7, i9 (személyi számítógépek), Xeon (szerverek és munkaállomások), Atom (mobil eszközök és alacsony fogyasztású eszközök).</p>
+
+        <h2>AMD</h2>
+
+        <ol>
+          <li><strong>Architektúra:</strong> Az AMD processzorok a RISC (Reduced Instruction Set Computer) architektúrára építenek, amely egyszerűbb utasításokat használ, de lehetővé teszi a nagyobb párhuzamosságot és hatékonyságot az alacsonyabb utasításszámú programoknál. Az AMD processzorok egyre inkább integrálják a CISC és RISC jellemzőit.</li>
+          <li><strong>Utasításkészlet:</strong> Az AMD processzorok az x86/x64 utasításkészletet használják, és támogatják az újabb technológiákat, mint például a Zen architektúra, amely jelentős teljesítményjavulást és energiahatékonyságot eredményezett.</li>
+          <li><strong>Órajel:</strong> Az AMD processzorok versenyképes órajelet és turbóboost technológiát is kínálnak, de általában nagyobb mag- és szálainformációkkal rendelkeznek, ami javítja a több szálú teljesítményt.</li>
+          <li><strong>Cache:</strong> Az AMD processzorok szintén több szintű cache-t tartalmaznak, például L1, L2 és L3 cache, amely az adatok gyors elérését segíti.</li>
+          <li><strong>Magok és szálak:</strong> Az AMD processzorok híresek a nagyobb számú magokkal és szálakkal rendelkező modellek szállításáról, ami különösen előnyös a több szálat igénylő alkalmazások és játékok esetében. A Ryzen sorozatú processzorok különösen jól teljesítenek ebben a tekintetben.</li>
+          <li><strong>Fogyasztás és hőmérséklet:</strong> Az AMD processzorok általában magasabb TDP-vel rendelkeznek, de a legújabb generációk a hőmérséklet kezelésében és az energiahatékonyság javításában is jelentős előrelépést mutatnak.</li>
+        </ol>
+
+        <p>Főbb termékcsaládok: Ryzen (asztali számítógépek), Ryzen Threadripper (magas teljesítményű munkaállomások), EPYC (szerverek), Athlon (belépő szintű és alacsony fogyasztású eszközök).</p>
+
+        <h2>Különbségek és összehasonlítások:</h2>
+
+        <ul>
+          <li><strong>Teljesítmény:</strong> Az Intel processzorok gyakran erősebb egy- és kétmagos teljesítményt kínálnak, míg az AMD processzorok a több magot és szálat igénylő feladatokban, mint a több szálú alkalmazások és játékok, általában jobb teljesítményt nyújtanak.</li>
+          <li><strong>Ár-érték arány:</strong> Az AMD processzorok gyakran kedvezőbb ár-érték arányt kínálnak, különösen a középkategóriás és belépő szintű modellek esetében. Az AMD versenyképes árakat és jó teljesítményt kínál a költséghatékony megoldásokhoz.</li>
+          <li><strong>Innováció:</strong> Az AMD az utóbbi években jelentős előrelépéseket tett az új Zen architektúrával, amely versenyképes teljesítményt és energiahatékonyságot kínál. Az Intel is folyamatosan fejlődik, és új technológiákat vezet be, mint például az Alder Lake architektúra, amely hibrid magokat alkalmaz.</li>
+          <li><strong>Hőkezelés:</strong> Az Intel processzorok általában alacsonyabb hőtermeléssel rendelkeznek, míg az AMD processzorok esetében a hűtés és energiahatékonyság kiemelt fontosságú, különösen a nagy teljesítményű modellek esetében.</li>
+          <li><strong>Piaci részesedés és felhasználói bázis:</strong> Az Intel hosszú ideig dominálta a piacon, de az AMD a Ryzen sorozattal és az EPYC processzorokkal jelentős piaci részesedést szerzett, és egyre nagyobb népszerűségnek örvend a felhasználók és a vállalatok körében.</li>
+        </ul>
+
         <h3>Specifikus processzorok</h3>
         <p>Hangkártya</p>
         <p>Videókártya</p>
         <p>Hálózati kártya</p>
+
+        <p>Összességében a processzorok fejlődése, tulajdonságai és technológiái alapvető fontosságúak a modern számítástechnika számára. A processzor teljesítménye határozza meg, hogy egy számítógép mennyire gyorsan és hatékonyan képes végrehajtani feladatokat, ami közvetlenül befolyásolja a felhasználói élményt és a számítástechnikai alkalmazások lehetőségeit.</p>
       </section>
     </main>
     <footer>
