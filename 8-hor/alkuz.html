@@ -7,6 +7,7 @@
 
     <title>Rendszerüzemeltetés</title>
     <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="panel.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,17 +40,45 @@
         <h1>Alkalmazások üzemeltetése (4+31 óra)</h1>
 
         <p>A témakör célja, hogy a tanulók megismerjék a hálózati környezetben működő alkalmazások telepítésének, karbantartásának alapvető módjait, valamint az ezzel kapcsolatos hibakeresés és elhárítás lépéseit. A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
-        <ul>
-          <li>Alkalmazások telepítése</li>
-          <li>Alkalmazások verziófrissítése, migrációja</li>
-          <li>Biztonsági mentések elvégzése</li>
-          <li>Szoftverüzemeltetéshez kapcsolódó L2-es szintű hibaelhárítás, hibajegykezelés</li>
-        </ul>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Alkalmazások telepítése</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Alkalmazások verziófrissítése, migrációja</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Biztonsági mentések elvégzése</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Szoftverüzemeltetéshez kapcsolódó L2-es szintű hibaelhárítás, hibajegykezelés</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <p>Csak az önálló tanulás bír tartós értékkel. &#x2022; <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
       <img src="../static/cc.logo.large.png" alt="cc">
     </footer>
+
+    <script src="panel.js"></script>
   </body>
 </html>

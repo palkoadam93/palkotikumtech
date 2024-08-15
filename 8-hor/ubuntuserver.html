@@ -7,6 +7,7 @@
 
     <title>Rendszerüzemeltetés</title>
     <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="panel.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,45 +40,302 @@
         <h1>Linux szerver telepítése és üzemeltetése (9+62 óra)</h1>
 
         <p>A témakör célja a Linux szerverek telepítési és menedzselési feladatainak, a tipikus szerverszolgáltatások beállításának megismertetése. A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
-        <ul>
-          <li>Képes a Linux szerver telepítéséhez szükséges hardverkövetelmények meghatározására.</li>
-          <li>Tud Linux szervert telepíteni fizikai és virtuális gépre.</li>
-          <li>Ismeri a szerver betöltési folyamatát, a hagyományos és a systemd által vezérelt módot is.</li>
-          <li>Tudja, mi a boot manager feladata, képes annak telepítésére és beállítására.</li>
-          <li>Ismeri a futási szintek jellemzőit, képes váltani a futási szintek között, képes újraindítani, leállítani a szervert.</li>
-          <li>Ismeri a Linux fájlrendszerek jellemzőit, képes adott fájlrendszert létrehozni a lemezen.</li>
-          <li>Ismeri a Linux rendszereknél használt lemezparticionálási módokat, a szükséges segédprogramokat.</li>
-          <li>Ismeri a fájlok és könyvtárak tulajdonságait, képes fájlkezelési műveletek elvégzésére.</li>
-          <li>Ismeri a megosztott és a rendszerkönyvtárak szerepét, helyét a rendszerben.</li>
-          <li>Képes a fájlrendszer integritásának fenntartására, lemezellenőrzésre, tisztában van a lemez monitorozásának alapjaival.</li>
-          <li>Ismeri a fájlhozzáférés beállítási lehetőségeit, képes a jogokat konfigurálni, az alapjogokon kívül ACL-ek segítségével is.</li>
-          <li>Képes lemezkvóták beállítására és ellenőrzésére.</li>
-          <li>Ismeri a hardlink és a szimbolikus link fogalmát, képes ilyeneket létrehozni, törölni.</li>
-          <li>Ismeri a csomagkezelés elterjedtebb módszereit (RPM, APT), képes a csomagkezelő programok használatával telepíteni és törölni alkalmazásokat, illetve azok adatait lekérdezni.</li>
-          <li>Képes programok telepítésére forráskódból is.</li>
-          <li>Ismeri a parancssori munkához szükséges shellbeállításokat és a napi munkához szükséges alapvető segédprogramokat.</li>
-          <li>Képes szövegfeldolgozásra szövegszerkesztővel és segédprogramokkal is (grep, cut, sed stb.).</li>
-          <li>Ismeri az alapvető reguláris kifejezéseket, és képes azokkal szövegillesztésre.</li>
-          <li>Ismeri a szabványos bemenet, szabványos kimenet, szabványos hibacsatorna fogalmát, az átirányítási módokat, csővezetékek (pipeline) kialakítását összetett feladatok ellátásához.</li>
-          <li>Képes felhasználók és csoportok létrehozására, menedzselésére és törlésére.</li>
-          <li>Képes a folyamatok, processzek listázására, leállítására, jelzések küldésére, prioritás megváltoztatására.</li>
-          <li>Ismeri a rendszernaplózás célját, tudja kezelni a helyi naplófájlokat, és képes hálózaton keresztüli naplózásra is.</li>
-          <li>Ismeri egy elterjedt grafikus felhasználói felület beállításait.</li>
-          <li>Képes időzített és ütemezett folyamatokat létrehozni és módosítani (at, cron).</li>
-          <li>Képes a nyomtatás beállítására, nyomtatási sor kezelésére.</li>
-          <li>Képes a szerver hálózati címzésének és alapszolgáltatásainak beállítására.</li>
-          <li>Képes DHCP-kliens és -szerver beállítására.</li>
-          <li>Ismeri a névfeloldás működését, képes DNS-szervert telepíteni és konfigurálni.</li>
-          <li>Ismeri a hálózati címfordítás működését, képes címfordításokat megvalósítani (SNAT, DNAT, port forwarding).</li>
-          <li>Ismeri a biztonságos adattovábbítás lehetőségeit (OpenSSH, GnuPG, X11 tunnels), és képes azokat használni.</li>
-          <li>Képes forgalomirányítás beállítására Linux szerver segítségével (quagga).</li>
-          <li>Képes biztonsági mentést végezni a rendszer és a felhasználók adatairól, képes rendszervisszaállítás elvégzésére biztonsági mentésből.</li>
-          <li>Képes webkiszolgáló telepítésére és konfigurálására (Apache, Nginx), háttéradatbázis-kiszolgálóval és PHP-támogatással.</li>
-          <li>Képes adatbázis-kiszolgáló telepítésére és beállítására (MySQL, MariaDB, PostgreSQL).</li>
-          <li>Képes tűzfalszabályok létrehozására és módosítására, valamint proxyszolgáltatások konfigurálására (iptables, squid).</li>
-          <li>Képes levelezési szolgáltatások telepítésére és konfigurálására helyi és hálózatközi levelezéshez (SMTP-protokoll, postfix, sendmail, exim, POP3, IMAP).</li>
-          <li>Képes egyszerűbb shell-szkriptek megírására, ismeri az ezekben alkalmazható vezérlési szerkezeteket.</li>
-        </ul>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes a Linux szerver telepítéséhez szükséges hardverkövetelmények meghatározására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tud Linux szervert telepíteni fizikai és virtuális gépre.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a szerver betöltési folyamatát, a hagyományos és a systemd által vezérelt módot is.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tudja, mi a boot manager feladata, képes annak telepítésére és beállítására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a futási szintek jellemzőit, képes váltani a futási szintek között, képes újraindítani, leállítani a szervert.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a Linux fájlrendszerek jellemzőit, képes adott fájlrendszert létrehozni a lemezen.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a Linux rendszereknél használt lemezparticionálási módokat, a szükséges segédprogramokat.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a fájlok és könyvtárak tulajdonságait, képes fájlkezelési műveletek elvégzésére.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a megosztott és a rendszerkönyvtárak szerepét, helyét a rendszerben.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes a fájlrendszer integritásának fenntartására, lemezellenőrzésre, tisztában van a lemez monitorozásának alapjaival.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a fájlhozzáférés beállítási lehetőségeit, képes a jogokat konfigurálni, az alapjogokon kívül ACL-ek segítségével is.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes lemezkvóták beállítására és ellenőrzésére.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a hardlink és a szimbolikus link fogalmát, képes ilyeneket létrehozni, törölni.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a csomagkezelés elterjedtebb módszereit (RPM, APT), képes a csomagkezelő programok használatával telepíteni és törölni alkalmazásokat, illetve azok adatait lekérdezni.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes programok telepítésére forráskódból is.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a parancssori munkához szükséges shellbeállításokat és a napi munkához szükséges alapvető segédprogramokat.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes szövegfeldolgozásra szövegszerkesztővel és segédprogramokkal is (grep, cut, sed stb.).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az alapvető reguláris kifejezéseket, és képes azokkal szövegillesztésre.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a szabványos bemenet, szabványos kimenet, szabványos hibacsatorna fogalmát, az átirányítási módokat, csővezetékek (pipeline) kialakítását összetett feladatok ellátásához.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes felhasználók és csoportok létrehozására, menedzselésére és törlésére.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes a folyamatok, processzek listázására, leállítására, jelzések küldésére, prioritás megváltoztatására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a rendszernaplózás célját, tudja kezelni a helyi naplófájlokat, és képes hálózaton keresztüli naplózásra is.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri egy elterjedt grafikus felhasználói felület beállításait.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes időzített és ütemezett folyamatokat létrehozni és módosítani (at, cron).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes a nyomtatás beállítására, nyomtatási sor kezelésére.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes a szerver hálózati címzésének és alapszolgáltatásainak beállítására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes DHCP-kliens és -szerver beállítására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a névfeloldás működését, képes DNS-szervert telepíteni és konfigurálni.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a hálózati címfordítás működését, képes címfordításokat megvalósítani (SNAT, DNAT, port forwarding).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a biztonságos adattovábbítás lehetőségeit (OpenSSH, GnuPG, X11 tunnels), és képes azokat használni.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes forgalomirányítás beállítására Linux szerver segítségével (quagga).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes biztonsági mentést végezni a rendszer és a felhasználók adatairól, képes rendszervisszaállítás elvégzésére biztonsági mentésből.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes webkiszolgáló telepítésére és konfigurálására (Apache, Nginx), háttéradatbázis-kiszolgálóval és PHP-támogatással.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes adatbázis-kiszolgáló telepítésére és beállítására (MySQL, MariaDB, PostgreSQL).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes tűzfalszabályok létrehozására és módosítására, valamint proxyszolgáltatások konfigurálására (iptables, squid).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes levelezési szolgáltatások telepítésére és konfigurálására helyi és hálózatközi levelezéshez (SMTP-protokoll, postfix, sendmail, exim, POP3, IMAP).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes egyszerűbb shell-szkriptek megírására, ismeri az ezekben alkalmazható vezérlési szerkezeteket.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
 
         <h1>Linux szerver</h1>
 
@@ -165,5 +423,7 @@
       <p>Csak az önálló tanulás bír tartós értékkel. &#x2022; <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
       <img src="../static/cc.logo.large.png" alt="cc">
     </footer>
+
+    <script src="panel.js"></script>
   </body>
 </html>
