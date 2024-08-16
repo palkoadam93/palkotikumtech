@@ -7,6 +7,7 @@
 
     <title>Informatikai és távközlési alapok II.</title>
     <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="panel.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,50 +39,309 @@
         <h1>A hálózati réteg, IPv4-es és IPv6-os címzés, a forgalomirányító alapszintű beállítása</h1>
 
         <p>A témakör célja, hogy a tanulók megismerjék a hálózati réteg feladatát és a logikai címzés szerepét; az IPv4-címek szerkezetét, jellemzőit. Megértsék a címmeghatározó protokollok működését IPv4-környezetben és képesek legyenek a címmeghatározó folyamat üzeneteinek azonosítására, adatforgalom elfogására alkalmas szoftver használatával. Átlássák az alhálózatok kialakításának lépéseit, és képesek legyenek adott méretű alhálózatok kialakítására. Forgalomirányítási alapismereteket szerezzenek, értelmezni tudják az irányítótábla bejegyzéseit IPv4-környezetben. Megismerjék a forgalomirányítók működését, szerepét, el tudják végezni a forgalomirányító alapkonfigurációját. Tisztában legyenek az alapértelmezett átjáró szerepével, és be tudjanak állítani alapértelmezett átjárót a klienseszközökön, kapcsolókon. A témakör elsajátítását követően a tanuló:</p>
-        <ul>
-          <li>Tisztában van a hálózati réteg szerepével, feladatával, jelentőségével. Ismeri a hálózati rétegben található eszközöket, protokollokat.</li>
-          <li>Ismeri az IP protokollfeladatát, jellemzőit, érti az összeköttetés-mentes csomagtovábbítás folyamatát.</li>
-          <li>Ismeri az IPv4-csomag fejlécének fontosabb mezőit (forrás- és cél-IPv4-cím, TTL, következő fejléc stb.)</li>
-          <li>Ismeri az IPv4-címek felépítését, szerkezetét, tisztában van az alhálózati maszk fogalmával, szerepével.</li>
-          <li>Ismeri az IPv4-címzés típusait (unicast, multicast, broadcast).</li>
-          <li>Ismeri az IPv4-címosztályokat, azok jellemzőit, képes megállapítani egy adott IPv4-címről, hogy melyik címosztályba tartozik.</li>
-          <li>Tisztában van a publikus és privát címek szerepével, használatával. Ismeri a publikus és privát IPv4-címeket, képes megállapítani egy adott IPv4-címről, hogy az publikus vagy privát.</li>
-          <li>Képes végberendezés IPv4-konfigurációjának statikus beállítására.</li>
-          <li>Ismeri az IPv4-es környezetben használt címmeghatározó protokollt (ARP) és üzeneteit. Tisztában van a címmeghatározó protokoll működésével és használatának szükségességével.</li>
-          <li>Képes végberendezés és hálózati eszköz ARP-táblájának megjelenítésére, a tábla sorainak törlésére.</li>
-          <li>Adatforgalom elfogására alkalmas szoftverrel képes nyomon követni az ARPprotokoll működését.</li>
-          <li>Tisztában van az egyenlő méretű és változó méretű alhálózatok kialakításának lépéseivel IPv4-környezetben.</li>
-          <li>Képes IPv4-környezetben egyenlő méretű és változó méretű alhálózatok (VLSM) kialakítására, és képes megállapítani, hogy több IPv4-cím egy alhálózathoz tartozik-e.</li>
-          <li>Képes adott alhálózat esetén a hálózati azonosító, a szórási cím és a kiosztható címtartomány megállapítására.</li>
-          <li>Ismer IPv4-alhálózat számolására alkalmas szoftvereket, webhelyeket, és képes legalább egy ilyen alkalmazás vagy webhely használatára.</li>
-          <li>Képes IPv4-környezetben az igényekhez igazodó címzési terv készítésére.</li>
-          <li>Tisztában van a forgalomirányító felépítésével, működésével.</li>
-          <li>Ismeri a forgalomirányító összetevőit, azok feladatát, és képes az összetevők beazonosítására.</li>
-          <li>Ismeri a forgalomirányító rendszerindítási folyamatát.</li>
-          <li>Képes konzolkapcsolatot kialakítani számítógép és forgalomirányító között. Ismer legalább egy terminálemulációs szoftvert, és annak használatával képes hozzáférni a forgalomirányító konfigurációs felületéhez.</li>
-          <li>Tisztában van az IOS elérési lehetőségeivel, az iOS konfigurációs felületén használható parancsok felépítésével, szintakszisával.</li>
-          <li>Tisztában van a forgalomirányítóban található memóriák fajtájával, szerepével. Tudja, hogy melyik memóriában mit tárol a forgalomirányító, és képes a memóriák tartalmának megjelenítésére.</li>
-          <li>Tisztában van a futó és kezdeti konfiguráció szerepével, valamint a felhasználásuk közti különbséggel. ‒ Képes a futó konfiguráció mentésére.</li>
-          <li>Tisztában van a forgalomirányító kezdeti konfigurációját megvalósító parancsokkal (például eszköz neve, privilegizált mód jelszava, vonali jelszavak, bejelentkezési és napi üzenet, parancselőzmények száma, vonali tétlenségi idő, naplóüzenetek szinkronmegjelenítése stb.), és használni tudja ezeket a parancsokat.</li>
-          <li>Képes a forgalomirányító interfészeinek konfigurálására (IP-cím és alhálózati maszk beállítása, leírás megadása, interfész engedélyezése és tiltása).</li>
-          <li>Tisztában van az alapértelmezett átjáró fogalmával, képes megállapítani az eszközön használandó alapértelmezett átjárót.</li>
-          <li>Képes a végberendezés alapértelmezett átjárójának beállítására.</li>
-          <li>Ismeri az ipconfig parancsot, és képes annak használatával megjeleníteni és értelmezni a végberendezések IPv4-beállításait.</li>
-          <li>Tisztában van a végberendezések csomagtovábbítási döntéseinek folyamatával.</li>
-          <li>Tisztában van a forgalomirányító csomagtovábbítási döntéseinek folyamatával.</li>
-          <li>Képes a forgalomirányító irányítótáblájának megjelenítésére, és tudja értelmezni a közvetlenül csatlakozó hálózatokat jelölő sorokat.</li>
-          <li>Ismeri a közvetlenül csatlakozó útvonalak irányítótáblába kerülésének folyamatát és az irányítótábla szerepét.</li>
-          <li>Képes ellenőrizni a közvetlenül csatlakozó hálózatok elérhetőségét.</li>
-          <li>Tisztában van az alapértelmezett útvonal szerepével, képes alapértelmezett útvonal létrehozására a forgalomirányítón.</li>
-          <li>Tisztában van az ICMPv4-protokoll szerepével, használatával, ismeri a protokoll által használt üzeneteket.</li>
-          <li>Ismeri a ping és traceroute parancsokat, tisztában van azok használatával, képes kapcsolatok ellenőrzésére ping és traceroute parancsok segítségével.</li>
-          <li>Képes hibaelhárítást végezni nem megfelelően működő, közvetlenül csatlakozó hálózatok között. Észreveszi a hálózatelérési hibát okozó téves konfigurációt, és képes annak korrigálására.</li>
-        </ul>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van a hálózati réteg szerepével, feladatával, jelentőségével. Ismeri a hálózati rétegben található eszközöket, protokollokat.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az IP protokollfeladatát, jellemzőit, érti az összeköttetés-mentes csomagtovábbítás folyamatát.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az IPv4-csomag fejlécének fontosabb mezőit (forrás- és cél-IPv4-cím, TTL, következő fejléc stb.)</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az IPv4-címek felépítését, szerkezetét, tisztában van az alhálózati maszk fogalmával, szerepével.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az IPv4-címzés típusait (unicast, multicast, broadcast).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az IPv4-címosztályokat, azok jellemzőit, képes megállapítani egy adott IPv4-címről, hogy melyik címosztályba tartozik.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van a publikus és privát címek szerepével, használatával. Ismeri a publikus és privát IPv4-címeket, képes megállapítani egy adott IPv4-címről, hogy az publikus vagy privát.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes végberendezés IPv4-konfigurációjának statikus beállítására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az IPv4-es környezetben használt címmeghatározó protokollt (ARP) és üzeneteit. Tisztában van a címmeghatározó protokoll működésével és használatának szükségességével.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes végberendezés és hálózati eszköz ARP-táblájának megjelenítésére, a tábla sorainak törlésére.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Adatforgalom elfogására alkalmas szoftverrel képes nyomon követni az ARPprotokoll működését.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van az egyenlő méretű és változó méretű alhálózatok kialakításának lépéseivel IPv4-környezetben.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes IPv4-környezetben egyenlő méretű és változó méretű alhálózatok (VLSM) kialakítására, és képes megállapítani, hogy több IPv4-cím egy alhálózathoz tartozik-e.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes adott alhálózat esetén a hálózati azonosító, a szórási cím és a kiosztható címtartomány megállapítására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismer IPv4-alhálózat számolására alkalmas szoftvereket, webhelyeket, és képes legalább egy ilyen alkalmazás vagy webhely használatára.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes IPv4-környezetben az igényekhez igazodó címzési terv készítésére.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van a forgalomirányító felépítésével, működésével.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a forgalomirányító összetevőit, azok feladatát, és képes az összetevők beazonosítására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a forgalomirányító rendszerindítási folyamatát.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes konzolkapcsolatot kialakítani számítógép és forgalomirányító között. Ismer legalább egy terminálemulációs szoftvert, és annak használatával képes hozzáférni a forgalomirányító konfigurációs felületéhez.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van az IOS elérési lehetőségeivel, az iOS konfigurációs felületén használható parancsok felépítésével, szintakszisával.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van a forgalomirányítóban található memóriák fajtájával, szerepével. Tudja, hogy melyik memóriában mit tárol a forgalomirányító, és képes a memóriák tartalmának megjelenítésére.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van a futó és kezdeti konfiguráció szerepével, valamint a felhasználásuk közti különbséggel. - Képes a futó konfiguráció mentésére.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van a forgalomirányító kezdeti konfigurációját megvalósító parancsokkal (például eszköz neve, privilegizált mód jelszava, vonali jelszavak, bejelentkezési és napi üzenet, parancselőzmények száma, vonali tétlenségi idő, naplóüzenetek szinkronmegjelenítése stb.), és használni tudja ezeket a parancsokat.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes a forgalomirányító interfészeinek konfigurálására (IP-cím és alhálózati maszk beállítása, leírás megadása, interfész engedélyezése és tiltása).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van az alapértelmezett átjáró fogalmával, képes megállapítani az eszközön használandó alapértelmezett átjárót.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes a végberendezés alapértelmezett átjárójának beállítására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az ipconfig parancsot, és képes annak használatával megjeleníteni és értelmezni a végberendezések IPv4-beállításait.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van a végberendezések csomagtovábbítási döntéseinek folyamatával.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van a forgalomirányító csomagtovábbítási döntéseinek folyamatával.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes a forgalomirányító irányítótáblájának megjelenítésére, és tudja értelmezni a közvetlenül csatlakozó hálózatokat jelölő sorokat.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a közvetlenül csatlakozó útvonalak irányítótáblába kerülésének folyamatát és az irányítótábla szerepét.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes ellenőrizni a közvetlenül csatlakozó hálózatok elérhetőségét.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van az alapértelmezett útvonal szerepével, képes alapértelmezett útvonal létrehozására a forgalomirányítón.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van az ICMPv4-protokoll szerepével, használatával, ismeri a protokoll által használt üzeneteket.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a ping és traceroute parancsokat, tisztában van azok használatával, képes kapcsolatok ellenőrzésére ping és traceroute parancsok segítségével.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes hibaelhárítást végezni nem megfelelően működő, közvetlenül csatlakozó hálózatok között. Észreveszi a hálózatelérési hibát okozó téves konfigurációt, és képes annak korrigálására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <p>Csak az önálló tanulás bír tartós értékkel. &#x2022; <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
       <img src="../static/cc.logo.large.png" alt="cc">
     </footer>
+
+    <script src="panel.js"></script>
   </body>
 </html>
