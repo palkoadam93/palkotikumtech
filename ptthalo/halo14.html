@@ -7,6 +7,7 @@
 
     <title>Hálózatok I.</title>
     <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="panel.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,33 +41,173 @@
         <h1>Második rétegbeli redundancia (7+15 óra)</h1>
 
         <p>A témakör célja, hogy a tanulók felismerjék az első és második rétegben a redundancia szükségességét, és tisztában legyenek a redundancia okozta problémákkal. Ismerjék meg a feszítőfa-protokoll szerepét, és legyenek képesek feszítőfa-protokoll használatára, konfigurálására. A tanulók értsék meg a portösszevonás működését, és legyenek képesek kapcsolók közötti portösszevonás konfigurálására, hibaelhárítására. A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
-        <ul>
-          <li>Tisztában van az első és második rétegbeli LAN-redundancia szerepével, szükségességével.</li>
-          <li>Érti a redundánsan kialakított hálózatok esetén felmerülő problémákat (szórási vihar, MAC-tábla-instabilitás, többszörös kerettovábbítás).</li>
-          <li>Képes a redundánsan kialakított hálózat problémáit szimulációs szoftver segítségével bemutatni, modellezni.</li>
-          <li>Ismeri a feszítőfa-protokollt, tisztában van annak szerepével, feladatával.</li>
-          <li>Ismeri a feszítőfa-protokoll működését, tudja az idekapcsolódó fogalmakat (gyökérponti híd, Bridge ID, BPDU, gyökérponti port, kijelölt port, nem kijelölt port).</li>
-          <li>Ismeri a Bridge ID tartalmát, felépítését.</li>
-          <li>Tisztában van a gyökérponti híd választásának folyamatával, és képes azt befolyásolni prioritás használatával.</li>
-          <li>Ismeri a feszítőfa-protokoll által használt vonali költségeket. Képes egy topológián megállapítani, hogy melyik kapcsoló tölti be a gyökérponti híd szerepét, a többi kapcsoló esetén képes a gyökérponti hídtól való költség megállapítására. Képes eldönteni, hogy melyik port milyen szerepet tölt be (gyökérponti, kijelölt, nem kijelölt).</li>
-          <li>Képes megjeleníteni egy kapcsolón a jelenleg használt feszítőfa-protokollt, a györkérponti híd és a saját Bridge ID-t, a gyökérponti hídtól vett költséget és a feszítőfa-protokollban részt vevő portok szerepét és költségét.</li>
-          <li>Tudja, hogy egy port felkapcsolása esetén milyen állapotváltozások (lezárt, figyelő, tanuló, továbbító, letiltott) mennek végbe, és képes ezeket jellemezni.</li>
-          <li>Ismeri a feszítőfa-protokoll változatait (STP, RSTP, PVST+, rapid PVST+, MSTP), érti a működésbeli eltéréseket.</li>
-          <li>Tisztában van a portfast, a BPDU-filter és a BPDU-guard szerepével, és képes ezeket beállítani globálisan és portonként is.</li>
-          <li>Képes a feszítőfa-protokoll hibakeresésére és hibaelhárítására.</li>
-          <li>Tisztában van a második rétegbeli portösszevonás szükségességével, és ismeri annak lehetőségeit.</li>
-          <li>Ismeri a portösszevonás előnyeit, a feszítőfa-protokollra vonatkozó jelentőségét.</li>
-          <li>Tudja, mi szükséges ahhoz, hogy a portösszevonás működőképesen megvalósuljon.</li>
-          <li>Ismer legalább egy protokollt, amely portösszevonást valósít meg (LACP, PAgP), tisztában van ezen protokoll működésével és a használt portmódokkal (kezdeményező, várakozó).</li>
-          <li>Képes az általa ismert protokollal EtherChannel kapcsolat kialakítására.</li>
-          <li>Képes egy kapcsolón létrehozott EtherChannel kapcsolatok megjelenítésére, a beletartozó portok kilistázására.</li>
-          <li>Képes EtherChannel kapcsolatok hibakeresésére és hibaelhárítására.</li>
-        </ul>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van az első és második rétegbeli LAN-redundancia szerepével, szükségességével.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Érti a redundánsan kialakított hálózatok esetén felmerülő problémákat (szórási vihar, MAC-tábla-instabilitás, többszörös kerettovábbítás).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes a redundánsan kialakított hálózat problémáit szimulációs szoftver segítségével bemutatni, modellezni.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a feszítőfa-protokollt, tisztában van annak szerepével, feladatával.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a feszítőfa-protokoll működését, tudja az idekapcsolódó fogalmakat (gyökérponti híd, Bridge ID, BPDU, gyökérponti port, kijelölt port, nem kijelölt port).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a Bridge ID tartalmát, felépítését.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van a gyökérponti híd választásának folyamatával, és képes azt befolyásolni prioritás használatával.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a feszítőfa-protokoll által használt vonali költségeket. Képes egy topológián megállapítani, hogy melyik kapcsoló tölti be a gyökérponti híd szerepét, a többi kapcsoló esetén képes a gyökérponti hídtól való költség megállapítására. Képes eldönteni, hogy melyik port milyen szerepet tölt be (gyökérponti, kijelölt, nem kijelölt).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes megjeleníteni egy kapcsolón a jelenleg használt feszítőfa-protokollt, a györkérponti híd és a saját Bridge ID-t, a gyökérponti hídtól vett költséget és a feszítőfa-protokollban részt vevő portok szerepét és költségét.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tudja, hogy egy port felkapcsolása esetén milyen állapotváltozások (lezárt, figyelő, tanuló, továbbító, letiltott) mennek végbe, és képes ezeket jellemezni.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a feszítőfa-protokoll változatait (STP, RSTP, PVST+, rapid PVST+, MSTP), érti a működésbeli eltéréseket.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van a portfast, a BPDU-filter és a BPDU-guard szerepével, és képes ezeket beállítani globálisan és portonként is.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes a feszítőfa-protokoll hibakeresésére és hibaelhárítására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van a második rétegbeli portösszevonás szükségességével, és ismeri annak lehetőségeit.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a portösszevonás előnyeit, a feszítőfa-protokollra vonatkozó jelentőségét.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tudja, mi szükséges ahhoz, hogy a portösszevonás működőképesen megvalósuljon.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismer legalább egy protokollt, amely portösszevonást valósít meg (LACP, PAgP), tisztában van ezen protokoll működésével és a használt portmódokkal (kezdeményező, várakozó).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes az általa ismert protokollal EtherChannel kapcsolat kialakítására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes egy kapcsolón létrehozott EtherChannel kapcsolatok megjelenítésére, a beletartozó portok kilistázására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes EtherChannel kapcsolatok hibakeresésére és hibaelhárítására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <p>Csak az önálló tanulás bír tartós értékkel. &#x2022; <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
       <img src="../static/cc.logo.large.png" alt="cc">
     </footer>
+
+    <script src="panel.js"></script>
   </body>
 </html>

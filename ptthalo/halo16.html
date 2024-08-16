@@ -7,6 +7,7 @@
 
     <title>Hálózatok I.</title>
     <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="panel.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,35 +41,189 @@
         <h1>IPv6-os címzés és dinamikus címkiosztás IPv6-környezetben (0+44 óra)</h1>
 
         <p>A témakör célja, hogy a tanulók megismerjék az IPv6-cím szerepét, szerkezetét, tisztában legyenek használatának szükségességével. A tanulók ismerjék meg az IPv6-címek típusait, és legyenek képesek IPv6-os címzés használatára forgalomirányítókon és végberendezéseken. A tanulók értsék meg a címmeghatározó protokoll szerepét IPv6-környezetben. A tanulók ismerkedjenek meg a dinamikus címkiosztás lehetőségeivel IPv6-környezetben. A tanulók legyenek képesek SLAAC használatára és DHCPv6-kiszolgáló konfigurálására forgalomirányítón. A tanulók ismerjék fel a dinamikus címkiosztás során felmerülő tipikus hibákat, és legyenek képesek azok elhárítására. A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
-        <ul>
-          <li>Tisztában van az IPv6-os címzés kialakulásának szükségességével és időszerűségével.</li>
-          <li>Ismeri az IPv6-csomag fejlécének fontosabb mezőit (forrás és cél IPv6-cím, ugráskorlát, következő fejléc).</li>
-          <li>Ismeri az IPv6-címek felépítését, szerkezetét, tisztában van a nibble, a prefix és a prefixhossz fogalmával.</li>
-          <li>Ismeri az IPv6-os címzés típusait (unicast, multicast, anycast).</li>
-          <li>Ismeri az IPv6 egyedi címek legfontosabb fajtáit (globális egyedi cím, link-local cím, visszacsatolási cím, meghatározatlan cím, egyedi helyi cím).</li>
-          <li>Tisztában van a globális egyedi cím szerkezetével (globális forgalomirányító előtag, alhálózat-azonosító, interfész-azonosító).</li>
-          <li>Ismeri az EUI-64 módszert, és tetszőleges MAC-cím esetén képes előállítani az interfészazonosítót EUI-64 használatával.</li>
-          <li>Képes hálózati eszközökön és végberendezéseken statikus IPv6-cím beállítására, link-local cím beállítására, használatára.</li>
-          <li>Képes IPv6-kapcsolat kialakítására és tesztelésére ping és traceroute parancsok használatával.</li>
-          <li>Ismeri az ICMPv6-protokoll működését és lehetséges üzeneteit.</li>
-          <li>Képes forgalomirányítón az IPv6-forgalomirányítás engedélyezésére.</li>
-          <li>Ismeri az IPv6-környezetben használt címmeghatározó protokollt (NDP), és annak üzeneteit (RA, RS, NA, NS). Tisztában van a címmeghatározó protokoll működésével és használatának szükségességével. Ismeri a címfeloldás és a duplikáltcímfelderítés menetét és a használt NDP-üzeneteket.</li>
-          <li>Képes IPv6-környezetben alhálózatok kialakítására, és képes megállapítani, hogy több IPv6-cm egy alhálózathoz tartozik-e.</li>
-          <li>Képes IPv6-környezetben címzési terv készítésére.</li>
-          <li>Képes IPv6-hálózat működésének ellenőrzésére és az alapvető hibák elhárítására.</li>
-          <li>Ismeri a dinamikus címkiosztás lehetőségeit IPv6-környezetben, és tisztában van a címigénylés folyamatával SLAAC, állapotmentes és állapottartó DHCPv6 esetén.</li>
-          <li>Ismeri az NDP protokoll üzeneteit (RA, RS, NA, NS), tisztában van azok jelentőségével a dinamikus címkiosztás vonatkozásában.</li>
-          <li>Ismeri a DHCPv6-folyamat legfontosabb üzeneteit (Solicit, Advertise, Request, Information-Request, Reply stb.), tisztában van azzal, hogy melyik üzenet mire szolgál.</li>
-          <li>Képes a dinamikus címigénylési folyamat üzeneteinek megtekintésére és elemzésére egy adatforgalom elfogására alkalmas szoftverrel. Tudja értelmezni az elfogott üzeneteket.</li>
-          <li>Képes forgalomirányítón dinamikus IPv6-címkiosztást konfigurálni SLAAC, állapotmentes és állapottartó DHCPv6 használatával.</li>
-          <li>Képes kliens eszközökön (végberendezés és forgalomirányító) dinamikus címigénylést használni IPv6-os környezetben.</li>
-          <li>Felismeri a leggyakoribb hibákat a dinamikus címkiosztás során IPv6- környezetben, és képes ezeknek a hibáknak az elhárítására.</li>
-        </ul>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van az IPv6-os címzés kialakulásának szükségességével és időszerűségével.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az IPv6-csomag fejlécének fontosabb mezőit (forrás és cél IPv6-cím, ugráskorlát, következő fejléc).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az IPv6-címek felépítését, szerkezetét, tisztában van a nibble, a prefix és a prefixhossz fogalmával.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az IPv6-os címzés típusait (unicast, multicast, anycast).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az IPv6 egyedi címek legfontosabb fajtáit (globális egyedi cím, link-local cím, visszacsatolási cím, meghatározatlan cím, egyedi helyi cím).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Tisztában van a globális egyedi cím szerkezetével (globális forgalomirányító előtag, alhálózat-azonosító, interfész-azonosító).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az EUI-64 módszert, és tetszőleges MAC-cím esetén képes előállítani az interfészazonosítót EUI-64 használatával.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes hálózati eszközökön és végberendezéseken statikus IPv6-cím beállítására, link-local cím beállítására, használatára.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes IPv6-kapcsolat kialakítására és tesztelésére ping és traceroute parancsok használatával.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az ICMPv6-protokoll működését és lehetséges üzeneteit.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes forgalomirányítón az IPv6-forgalomirányítás engedélyezésére.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az IPv6-környezetben használt címmeghatározó protokollt (NDP), és annak üzeneteit (RA, RS, NA, NS). Tisztában van a címmeghatározó protokoll működésével és használatának szükségességével. Ismeri a címfeloldás és a duplikáltcímfelderítés menetét és a használt NDP-üzeneteket.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes IPv6-környezetben alhálózatok kialakítására, és képes megállapítani, hogy több IPv6-cm egy alhálózathoz tartozik-e.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes IPv6-környezetben címzési terv készítésére.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes IPv6-hálózat működésének ellenőrzésére és az alapvető hibák elhárítására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a dinamikus címkiosztás lehetőségeit IPv6-környezetben, és tisztában van a címigénylés folyamatával SLAAC, állapotmentes és állapottartó DHCPv6 esetén.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az NDP protokoll üzeneteit (RA, RS, NA, NS), tisztában van azok jelentőségével a dinamikus címkiosztás vonatkozásában.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a DHCPv6-folyamat legfontosabb üzeneteit (Solicit, Advertise, Request, Information-Request, Reply stb.), tisztában van azzal, hogy melyik üzenet mire szolgál.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes a dinamikus címigénylési folyamat üzeneteinek megtekintésére és elemzésére egy adatforgalom elfogására alkalmas szoftverrel. Tudja értelmezni az elfogott üzeneteket.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes forgalomirányítón dinamikus IPv6-címkiosztást konfigurálni SLAAC, állapotmentes és állapottartó DHCPv6 használatával.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes kliens eszközökön (végberendezés és forgalomirányító) dinamikus címigénylést használni IPv6-os környezetben.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Felismeri a leggyakoribb hibákat a dinamikus címkiosztás során IPv6- környezetben, és képes ezeknek a hibáknak az elhárítására.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <p>Csak az önálló tanulás bír tartós értékkel. &#x2022; <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
       <img src="../static/cc.logo.large.png" alt="cc">
     </footer>
+
+    <script src="panel.js"></script>
   </body>
 </html>
