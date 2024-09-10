@@ -44,32 +44,130 @@
         <div class="dropdown">
           <button class="dropdown-btn">Ismeri a virtualizáció megvalósítási módjait, a szerver- és kliensoldali virtualizáció eszközeit.</button>
           <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
+    <h2>Virtualizációs módok</h2>
+    <p>A virtualizáció lehetővé teszi, hogy egyetlen fizikai gépen több virtuális gépet futtassunk. Az alábbiakban bemutatjuk a legfontosabb virtualizációs módokat:</p>
+    <ul>
+        <li><strong>Hardveres virtualizáció:</strong> A hardveres virtualizáció lehetővé teszi, hogy a virtuális gépek közvetlenül használják a fizikai gép hardverét. Ehhez speciális hardveres támogatás szükséges.</li>
+        <li><strong>Operációs rendszer szintű virtualizáció:</strong> Az operációs rendszer szintű virtualizáció során a virtuális gépek azonos operációs rendszert használnak, de izolált környezetben futnak.</li>
+        <li><strong>Teljes virtualizáció:</strong> A teljes virtualizáció során a virtuális gép teljesen elkülönül a fizikai géptől, és az operációs rendszer semmit sem tud a virtuális gépek létezéséről.</li>
+        <li><strong>Paravirtualizáció:</strong> A paravirtualizáció során a virtuális gépek tudomásul veszik, hogy virtuális környezetben futnak, és ennek megfelelően kommunikálnak a hypervisorral.</li>
+    </ul>
+
+    <h2>Szerveroldali virtualizációs eszközök</h2>
+    <p>A szerveroldali virtualizáció során a fizikai szervereken több virtuális gép fut. Az alábbiakban felsoroljuk a legnépszerűbb szerveroldali virtualizációs eszközöket:</p>
+    <ol>
+        <li><strong>VMware vSphere:</strong> Az egyik legismertebb és legelterjedtebb virtualizációs platform, amely széleskörű funkciókat és támogatást nyújt.</li>
+        <li><strong>Microsoft Hyper-V:</strong> A Microsoft virtualizációs megoldása, amely integráltan érkezik a Windows Server operációs rendszerrel.</li>
+        <li><strong>KVM (Kernel-based Virtual Machine):</strong> Nyílt forráskódú virtualizációs megoldás, amely a Linux kernelen alapul.</li>
+        <li><strong>Xen:</strong> Egy másik nyílt forráskódú virtualizációs megoldás, amely a paravirtualizációs technológiát alkalmazza.</li>
+    </ol>
+
+    <h2>Kliensoldali virtualizációs eszközök</h2>
+    <p>A kliensoldali virtualizáció célja, hogy egyetlen gépen több virtuális gépet futtassunk, gyakran a felhasználói munkafolyamatok támogatására. A következő eszközök népszerűek:</p>
+    <ul>
+        <li><strong>Oracle VM VirtualBox:</strong> Ingyenes és nyílt forráskódú virtualizációs szoftver, amely széleskörű támogatást nyújt különböző operációs rendszerekhez.</li>
+        <li><strong>VMware Workstation:</strong> A VMware asztali virtualizációs megoldása, amely fejlett funkciókat és nagy teljesítményt kínál.</li>
+        <li><strong>Parallels Desktop:</strong> Virtualizációs megoldás, amely elsősorban macOS operációs rendszer alatt futó virtuális gépekre koncentrál.</li>
+        <li><strong>Microsoft Hyper-V (asztali verzió):</strong> A Hyper-V asztali verziója lehetővé teszi virtuális gépek futtatását a Windows 10 Pro és Enterprise verziókon.</li>
+    </ul>
+
+    <h2>Összefoglaló táblázat</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Virtualizációs mód</th>
+                <th>Leírás</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hardveres virtualizáció</td>
+                <td>Virtuális gépek közvetlenül használják a fizikai hardvert.</td>
+            </tr>
+            <tr>
+                <td>Operációs rendszer szintű virtualizáció</td>
+                <td>Azonos operációs rendszert használnak a virtuális gépek, de izolált környezetben futnak.</td>
+            </tr>
+            <tr>
+                <td>Teljes virtualizáció</td>
+                <td>A virtuális gép teljesen elkülönül a fizikai géptől.</td>
+            </tr>
+            <tr>
+                <td>Paravirtualizáció</td>
+                <td>A virtuális gépek tudomásul veszik, hogy virtuális környezetben futnak.</td>
+            </tr>
+        </tbody>
+    </table>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropdown-btn">Képes virtuális gépek telepítésére, hardverparamétereik beállítására, pillanatképek létrehozására.</button>
           <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pXVz1KkiHiA?si=uYMPNU62deAeWyK1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropdown-btn">Ismeri a konténer fogalmát, alkalmazási lehetőségeit.</button>
           <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
+            <h2>Konténer fogalma</h2>
+    <p>A konténer egy szoftveres technológia, amely lehetővé teszi, hogy az alkalmazások és azok függőségei egy önálló, izolált környezetben fussanak. A konténerek könnyű súlyúak és gyorsan indíthatók, mivel nem igényelnek teljes operációs rendszert, csak a szükséges alkalmazás- és rendszerfüggőségeket tartalmazzák.</p>
+
+    <h2>Konténerek jellemzői</h2>
+    <ul>
+        <li><strong>Izoláció:</strong> A konténerek biztosítják, hogy az alkalmazások és azok függőségei elkülönüljenek egymástól, így minimalizálva a konfliktusokat.</li>
+        <li><strong>Könnyű súly:</strong> Mivel nem igényelnek teljes operációs rendszert, a konténerek gyorsabban indulnak és kevesebb erőforrást fogyasztanak, mint a virtuális gépek.</li>
+        <li><strong>Portabilitás:</strong> A konténerek azonos környezetet biztosítanak a fejlesztés, tesztelés és üzemeltetés során, függetlenül attól, hogy hol futnak.</li>
+        <li><strong>Skálázhatóság:</strong> Könnyen skálázhatók az alkalmazások, mivel a konténerek gyorsan indíthatók és állíthatók le.</li>
+    </ul>
+
+    <h2>Konténerek alkalmazási lehetőségei</h2>
+    <p>A konténerek széleskörű alkalmazási lehetőségeket kínálnak az informatika világában:</p>
+    <ol>
+        <li><strong>Fejlesztés és tesztelés:</strong> A fejlesztők és tesztelők egyforma környezetet használhatnak az alkalmazások fejlesztéséhez és teszteléséhez, függetlenül a helyszíntől és a használt eszközöktől.</li>
+        <li><strong>Microservices architektúra:</strong> A konténerek ideálisak a microservices architektúrák megvalósítására, ahol az alkalmazásokat kisebb, független szolgáltatásokra bontják.</li>
+        <li><strong>CI/CD pipelines:</strong> A konténerek használata lehetővé teszi a folyamatos integrációt és telepítést, mivel az alkalmazásokat és azok környezetét egy konténerbe csomagolják.</li>
+        <li><strong>Cloud Nativ és DevOps:</strong> A konténerek jól integrálhatók a felhőalapú és DevOps folyamatokkal, lehetővé téve a gyors alkalmazástelepítést és -kezelést.</li>
+    </ol>
+
+    <h2>Összefoglaló Táblázat</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Jellemző</th>
+                <th>Leírás</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Izoláció</td>
+                <td>Az alkalmazások és függőségeik elkülönítése, minimalizálva a konfliktusokat.</td>
+            </tr>
+            <tr>
+                <td>Könnyű súly</td>
+                <td>Gyors indítás és kevesebb erőforrás-felhasználás a teljes operációs rendszer hiányában.</td>
+            </tr>
+            <tr>
+                <td>Portabilitás</td>
+                <td>Az alkalmazások azonos környezetben futnak fejlesztéstől az üzemeltetésig.</td>
+            </tr>
+            <tr>
+                <td>Skálázhatóság</td>
+                <td>Gyors skálázás az alkalmazások igényei szerint.</td>
+            </tr>
+        </tbody>
+    </table>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropdown-btn">Ismeri a különböző virtualizációs megoldások használatát: Hyper-V, KVM, Vmware.</button>
           <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kTlvH1EJYvo?si=tAQeD970epyljY9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ve1K0UOvNVs?si=GZ1QDwpofFncz3LD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/43Zof68kzfQ?si=uUCxdxMkuBvdnVY9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3_onuvPDlzU?si=GbGecWxnRt6ZuuuZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
           </div>
         </div>
 

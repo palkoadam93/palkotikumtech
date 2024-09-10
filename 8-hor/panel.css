@@ -41,11 +41,8 @@ h2 {
 }
 
 .dropdown-content p {
-    color: black;
-    padding: 8px 12px;
-    margin: 0;
     text-decoration: none;
-    display: block;
+    /*display: block;*/
 }
 
 .dropdown-content p:hover {
