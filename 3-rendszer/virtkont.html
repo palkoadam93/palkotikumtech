@@ -45,72 +45,443 @@
         <div class="dropdown">
           <button class="dropdown-btn">Ismeri a virtualizáció célját, fel tudja sorolni előnyeit a dedikált szerveres telepítési móddal szemben.</button>
           <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
+            <h2>Mi a virtualizáció célja?</h2>
+            <p>A virtualizáció célja, hogy egy fizikai számítógép vagy szerver erőforrásait hatékonyabban használjuk fel több, elkülönített virtuális gép vagy környezet létrehozásával. Ez lehetővé teszi, hogy egyetlen hardveren több operációs rendszer vagy alkalmazás futhasson egyszerre, miközben ezek egymástól teljesen elszigetelten működnek.</p>
+
+            <h2>A virtualizáció előnyei a dedikált szerveres telepítéssel szemben</h2>
+            <ul>
+              <li><strong>Költséghatékonyság:</strong> A virtualizáció segítségével több virtuális gép futtatható egyetlen fizikai szerveren, ami csökkenti a hardver beszerzési és karbantartási költségeket.</li>
+              <li><strong>Erőforrás-kihasználás:</strong> A dedikált szerverek gyakran nem használják ki teljesen a rendelkezésre álló erőforrásokat (CPU, memória). A virtualizáció lehetővé teszi ezek jobb kihasználását, mivel több virtuális gép osztozhat ugyanazon a hardveren.</li>
+              <li><strong>Rugalmasság:</strong> Könnyen hozzáadható vagy eltávolítható virtuális gépek, igény szerint skálázhatóak az erőforrások. Ezzel gyorsabban lehet reagálni az üzleti igényekre.</li>
+              <li><strong>Izoláció és biztonság:</strong> A virtuális gépek egymástól elkülönítve futnak, így ha az egyik gépen probléma lép fel (pl. vírusfertőzés), az nem terjed át a többi gépre.</li>
+              <li><strong>Könnyű karbantartás és migráció:</strong> A virtuális gépeket könnyen át lehet mozgatni egyik fizikai szerverről a másikra, ami egyszerűbbé teszi a karbantartást és a hardverfrissítéseket.</li>
+              <li><strong>Gyors helyreállítás:</strong> A virtuális gépek gyorsan visszaállíthatóak biztonsági mentésekből vagy snapshotokból, ami lerövidíti a leállási időt.</li>
+            </ul>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropdown-btn">Tudja, mi a különbség a szerver- és kliensoldali virtualizáció között.</button>
           <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
+            <p>A szerveroldali és a kliensoldali virtualizálás közötti különbség elsősorban abban rejlik, hogy hol történik a virtualizáció, milyen célokra használják, és milyen előnyöket nyújtanak az egyes megközelítések. Nézzük meg a két típust részletesebben:</p>
+            
+            <h2>1. Szerveroldali virtualizáció (Server-side virtualization)</h2>
+            <p>A szerveroldali virtualizáció során a virtualizáció a szerveren történik, amely lehetővé teszi, hogy egyetlen fizikai szerveren több virtuális gép (VM) vagy konténer fusson. A virtualizációs technológia (például VMware, Hyper-V vagy KVM) használatával a fizikai hardver erőforrásait osztják meg több operációs rendszer vagy alkalmazás között.</p>
+            <p><strong>Jellemzői:</strong></p>
+            <ul>
+              <li><strong>Központi hely:</strong> A virtualizáció egy központi szerveren történik, ahol a fizikai erőforrásokat (pl. CPU, memória, tárhely) több virtuális gép használja.</li>
+              <li><strong>Adatközpontokban jellemző:</strong> A szerveroldali virtualizáció gyakran adatközpontokban vagy nagyvállalati környezetben használatos, ahol nagy mennyiségű virtuális gépet kell üzemeltetni.</li>
+              <li><strong>Központosított irányítás:</strong> Az IT-részleg felügyeli és kezeli a virtuális gépeket, beleértve a biztonsági mentéseket, frissítéseket és erőforrás-kezelést.</li>
+              <li><strong>Rugalmasság:</strong> A szerveroldali virtualizáció lehetővé teszi, hogy az erőforrásokat dinamikusan osszák el az igényeknek megfelelően, optimalizálva ezzel a hardver kihasználtságát.</li>
+            </ul>
+            <p><strong>Előnyök:</strong></p>
+            <ul>
+              <li>Magas szintű skálázhatóság és erőforrás-kihasználás.</li>
+              <li>Könnyebb karbantartás és menedzsment, mivel minden egy központi szerveren fut.</li>
+              <li>Alkalmazások és operációs rendszerek könnyebb szétválasztása és izolációja.</li>
+            </ul>
+
+            <h2>2. Kliensoldali virtualizáció (Client-side virtualization)</h2>
+            <p>A kliensoldali virtualizáció során a virtualizációs környezet maga a felhasználó eszközén (pl. számítógépen, laptopon) jön létre. Ez lehetővé teszi, hogy egy adott kliensen több operációs rendszer vagy alkalmazás futhasson egymástól elszigetelten.</p>
+            <p><strong>Jellemzői:</strong></p>
+            <ul>
+              <li><strong>Helyi eszközökön fut:</strong> A virtualizáció a felhasználó eszközén történik, tehát a felhasználó közvetlen hozzáféréssel rendelkezik a virtuális gépekhez.</li>
+              <li><strong>Felhasználói gépeken jellemző:</strong> Jellemzően asztali számítógépeken, laptopokon vagy mobil eszközökön alkalmazzák, ahol a felhasználóknak szükségük van több operációs rendszerre, vagy el kell különíteniük különböző munkafolyamatokat.</li>
+              <li><strong>Helyi erőforrások használata:</strong> A helyi erőforrások (pl. memória, CPU) használatával futtatják a virtuális gépeket.</li>
+              <li><strong>Függetlenség a szervertől:</strong> A kliensoldali virtualizáció kevésbé függ a központi szervertől, és a felhasználó eszköze autonóm módon képes működni.</li>
+            </ul>
+            <p><strong>Előnyök:</strong></p>
+            <ul>
+              <li>Felhasználói szabadság és mobilitás: a felhasználók saját eszközeiken futtathatnak különböző virtuális gépeket, internetkapcsolat nélkül is.</li>
+              <li>Könnyű hozzáférés és fejlesztői környezetek tesztelésére vagy elszigetelt munkavégzésre ideális.</li>
+              <li>Rugalmasság a különböző operációs rendszerek futtatásában egyetlen gépen.</li>
+            </ul>
+
+            <h2>Fő különbségek összefoglalása:</h2>
+            <table border="1" cellpadding="10">
+              <thead>
+                <tr>
+                  <th>Szempont</th>
+                  <th>Szerveroldali virtualizáció</th>
+                  <th>Kliensoldali virtualizáció</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hol történik?</td>
+                  <td>Szervereken, adatközpontokban</td>
+                  <td>Felhasználó eszközén</td>
+                </tr>
+                <tr>
+                  <td>Felhasználási cél</td>
+                  <td>Több szerver és szolgáltatás centralizált futtatása</td>
+                  <td>Több OS vagy alkalmazás futtatása egy kliensen</td>
+                </tr>
+                <tr>
+                  <td>Erőforrások</td>
+                  <td>Megosztott szerver erőforrások</td>
+                  <td>Helyi erőforrások (CPU, RAM)</td>
+                </tr>
+                <tr>
+                  <td>Skálázhatóság</td>
+                  <td>Magas, központi menedzsmenttel</td>
+                  <td>Korlátozott, felhasználói eszközöktől függ</td>
+                </tr>
+                <tr>
+                  <td>Mobilitás</td>
+                  <td>Központilag menedzselt</td>
+                  <td>Felhasználó által vezérelt, rugalmas</td>
+                </tr>
+              </tbody>
+            </table>            
+            <p>Összefoglalva, a szerveroldali virtualizáció inkább központosított, nagyobb rendszerekben történik, míg a kliensoldali virtualizáció a felhasználói eszközökön működik, és rugalmasabb egyéni felhasználásra.</p>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropdown-btn">Ismeri a hypervisor jelentését, meg tudja különböztetni az 1-es és 2-es típusú hypervisort, és tud példákat mondani rájuk.</button>
           <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
+    <h2>Mi a hypervisor?</h2>
+    <p>A hypervisor egy szoftver, amely lehetővé teszi, hogy egy fizikai gépen több virtuális gép (VM) fusson. A hypervisor biztosítja, hogy a virtuális gépek egymástól függetlenül működjenek, és megosztja a fizikai erőforrásokat (pl. CPU, memória) a különböző virtuális környezetek között.</p>
+
+    <h2>A hypervisor típusai</h2>
+    <p>Két fő típusú hypervisor létezik: 1-es típusú és 2-es típusú hypervisor.</p>
+
+    <h2>1-es típusú hypervisor</h2>
+    <p>Az 1-es típusú hypervisor, más néven bare-metal hypervisor, közvetlenül a fizikai hardveren fut, operációs rendszer nélkül. Ez azt jelenti, hogy közvetlenül irányítja a hardvert és futtatja a virtuális gépeket.</p>
+    <ul>
+        <li><strong>Teljesítmény:</strong> Magasabb teljesítményt nyújt, mivel nincs köztes operációs rendszer.</li>
+        <li><strong>Biztonság:</strong> Jobb izoláció és biztonság, mivel nincs köztes réteg.</li>
+        <li><strong>Használat:</strong> Elsősorban adatközpontokban és nagyvállalati környezetekben használják.</li>
+    </ul>
+    <p>Példák 1-es típusú hypervisorokra:</p>
+    <ul>
+        <li>VMware ESXi</li>
+        <li>Microsoft Hyper-V</li>
+        <li>Xen</li>
+    </ul>
+
+    <h2>2-es típusú hypervisor</h2>
+    <p>A 2-es típusú hypervisor, más néven hosted hypervisor, egy meglévő operációs rendszer tetején fut. Az operációs rendszer biztosítja a hardverhez való hozzáférést, míg a hypervisor felügyeli a virtuális gépek működését.</p>
+    <ul>
+        <li><strong>Könnyebb telepítés:</strong> A 2-es típusú hypervisor telepítése egyszerűbb, mivel egy meglévő operációs rendszerre épül.</li>
+        <li><strong>Teljesítmény:</strong> Alacsonyabb teljesítmény, mivel az operációs rendszer rétege lassítja a hozzáférést a hardverhez.</li>
+        <li><strong>Használat:</strong> Jellemzően fejlesztői gépeken vagy kis környezetekben használják, ahol nincs szükség nagy teljesítményre.</li>
+    </ul>
+    <p>Példák 2-es típusú hypervisorokra:</p>
+    <ul>
+        <li>Oracle VirtualBox</li>
+        <li>VMware Workstation</li>
+        <li>Parallels Desktop</li>
+    </ul>
+
+    <h2>Különbségek az 1-es és 2-es típusú hypervisor között</h2>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Szempont</th>
+                <th>1-es típusú hypervisor</th>
+                <th>2-es típusú hypervisor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Telepítési hely</td>
+                <td>Közvetlenül a hardveren</td>
+                <td>Meglévő operációs rendszeren</td>
+            </tr>
+            <tr>
+                <td>Teljesítmény</td>
+                <td>Magas</td>
+                <td>Alacsonyabb</td>
+            </tr>
+            <tr>
+                <td>Felhasználási terület</td>
+                <td>Adatközpontok, nagyvállalatok</td>
+                <td>Fejlesztői gépek, kisebb környezetek</td>
+            </tr>
+            <tr>
+                <td>Telepítési bonyolultság</td>
+                <td>Bonyolultabb</td>
+                <td>Könnyebb</td>
+            </tr>
+        </tbody>
+    </table>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropdown-btn">Tudja, milyen erőforrásigényt jelent a virtualizáció megvalósítása.</button>
           <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
+            <h2>Milyen erőforrás-igényt jelent a virtualizáció megvalósítása?</h2>
+
+    <p>A virtualizáció megvalósítása során a fizikai erőforrásokat több virtuális gép között kell megosztani, ami különböző erőforrásokat érint. Ezek közé tartozik a processzor (CPU), a memória (RAM), a tárhely, valamint a hálózati erőforrások. Az alábbiakban részletesen bemutatom, hogy ezek az erőforrások milyen módon érintettek a virtualizációban.</p>
+
+    <h2>Erőforrás-igények</h2>
+
+    <ul>
+        <li>
+            <strong>Processzor (CPU):</strong>
+            <p>A virtualizáció jelentős CPU-kapacitást igényel, mivel a hypervisor feladata a különböző virtuális gépek erőforrásainak kezelése és elosztása. Minél több virtuális gépet futtatunk, annál nagyobb teljesítményű processzorokra van szükség, és a többmagos CPU-k elengedhetetlenek a hatékony működéshez.</p>
+        </li>
+
+        <li>
+            <strong>Memória (RAM):</strong>
+            <p>Minden virtuális gépnek szüksége van saját memóriára, így a RAM-kapacitás növelése kritikus fontosságú a virtualizáció szempontjából. A hypervisor is fogyaszt memóriát, ezért figyelembe kell venni a virtualizációs réteg által használt erőforrásokat is.</p>
+        </li>
+
+        <li>
+            <strong>Tárhely (Storage):</strong>
+            <p>A virtuális gépek számára dedikált lemezterület szükséges, ami gyakran nagyobb tárhelyet igényel, mint a fizikai gépeknél. Továbbá, a gyors hozzáférésű és redundáns tárolási megoldások (például SSD, SAN rendszerek) javítják a teljesítményt és a megbízhatóságot.</p>
+        </li>
+
+        <li>
+            <strong>Hálózati erőforrások:</strong>
+            <p>A virtualizált környezetekben a hálózati erőforrások megosztása is fontos tényező. A virtuális gépek gyakran nagyobb hálózati forgalmat generálnak, így szükség lehet dedikált hálózati interfészekre vagy gyorsabb hálózati kapcsolatokra (pl. 10 Gbps Ethernet).</p>
+        </li>
+    </ul>
+
+    <h2>Egyéb tényezők</h2>
+    <ul>
+        <li>
+            <strong>Skálázhatóság:</strong> Minél több virtuális gépet kell futtatni, annál nagyobb teljesítményű hardverekre van szükség, és az erőforrások dinamikus elosztása elengedhetetlen a megfelelő működéshez.
+        </li>
+        <li>
+            <strong>Energiafogyasztás:</strong> A virtualizált környezetekben több virtuális gép futtatható kevesebb fizikai gépen, így csökkenthető az energiafogyasztás, azonban a nagyobb teljesítményű szerverek nagyobb energiaigényt is jelenthetnek.
+        </li>
+        <li>
+            <strong>Hűtés:</strong> Nagyobb hardver teljesítmény és sűrűbb szerverkonfigurációk esetén fokozott hűtési igény léphet fel.
+        </li>
+    </ul>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropdown-btn">Képes virtuális gép telepítésére valamilyen elterjedt virtualizációs programban (pl. Virtualbox, VMWare): be tudja állítani a virtuális hardver paramétereit, és képes image-fájlból operációs rendszert telepíteni.</button>
           <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
+            <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BR9nHSTII9I?si=VxaT82_FxC0VHiDO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropdown-btn">Ismeri a konténer fogalmát, tudja, hogy miben különbözik a virtuális gépektől, képes konténert indítani és leállítani valamilyen elterjedt módszer (pl. Docker) segítségével.</button>
           <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
+            <h2>Mi a konténer fogalma?</h2>
+    <p>
+        A konténer egy könnyű, önálló futtatási környezet, amely magában foglalja az alkalmazást és annak minden függőségét (könyvtárak, beállítások, fájlok). A konténerek egyetlen operációs rendszermag megosztásával futnak, és a szoftverek elszigetelésére szolgálnak, így egymástól függetlenül működhetnek ugyanazon a gazdagépen.
+    </p>
+
+    <h2>Miben különbözik a konténer a virtuális gépektől?</h2>
+    <p>
+        Bár mind a konténerek, mind a virtuális gépek lehetővé teszik több, egymástól elszigetelt alkalmazás futtatását egyetlen fizikai szerveren, jelentős különbségek vannak közöttük.
+    </p>
+
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Szempont</th>
+                <th>Konténerek</th>
+                <th>Virtuális gépek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Architektúra</td>
+                <td>Megosztják a gazdagép operációs rendszerének magját</td>
+                <td>Minden virtuális gépnek saját operációs rendszere van</td>
+            </tr>
+            <tr>
+                <td>Erőforrás-használat</td>
+                <td>Könnyű, kisebb erőforrás-igény</td>
+                <td>Nagyobb erőforrás-igény, mivel minden VM-nek külön OS fut</td>
+            </tr>
+            <tr>
+                <td>Indítási idő</td>
+                <td>Gyors, másodpercek alatt indítható</td>
+                <td>Lassabb, percekig is tarthat</td>
+            </tr>
+            <tr>
+                <td>Izoláció</td>
+                <td>Az alkalmazások izolációja az OS-szinten történik</td>
+                <td>Teljes izoláció a VM-en belüli OS és az alkalmazások között</td>
+            </tr>
+            <tr>
+                <td>Használati esetek</td>
+                <td>Gyors telepítés, microservice architektúrák, fejlesztői környezetek</td>
+                <td>Hagyományos alkalmazások, nagyobb izolációt igénylő környezetek</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Főbb különbségek</h2>
+    <ul>
+        <li>
+            <strong>Operációs rendszer:</strong> A konténerek ugyanazt az operációs rendszermagot használják, míg a virtuális gépek saját operációs rendszert futtatnak, ami nagyobb izolációt biztosít.
+        </li>
+        <li>
+            <strong>Erőforrás-igény:</strong> A konténerek kevesebb erőforrást használnak, mivel nincs szükségük külön operációs rendszerre, ezzel szemben a virtuális gépek több memóriát és tárhelyet igényelnek.
+        </li>
+        <li>
+            <strong>Teljesítmény:</strong> A konténerek gyorsabbak és könnyebben indíthatók, míg a virtuális gépek lassabban indulnak el az operációs rendszerük miatt.
+        </li>
+        <li>
+            <strong>Izoláció:</strong> A virtuális gépek nagyobb biztonságot és izolációt nyújtanak, mivel minden VM teljesen elszigetelten fut, míg a konténerek közös operációs rendszermagot használnak, így izolációjuk kevésbé szigorú.
+        </li>
+    </ul>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropdown-btn">Ismeri a számítási felhő (cloud computing) fogalmát, és tudja, hogy mire használható.</button>
           <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
+            <h2>Mi a számítási felhő (cloud computing) fogalma?</h2>
+    <p>
+        A számítási felhő (cloud computing) egy olyan szolgáltatásmodell, amely lehetővé teszi számítási erőforrások (pl. szerverek, tárhely, adatbázisok, hálózat, szoftverek) távoli hozzáférését és használatát interneten keresztül. A felhőalapú szolgáltatások igény szerint elérhetők, és azokat a felhasználók általában előfizetéses alapon veszik igénybe, így nincs szükségük saját infrastruktúra kiépítésére és fenntartására.
+    </p>
+
+    <h2>Mire használható a számítási felhő?</h2>
+    <p>A számítási felhő számos területen alkalmazható, az alábbiakban néhány fontos felhasználási területet mutatunk be:</p>
+
+    <h2>Felhasználási területek</h2>
+    <ul>
+        <li><strong>Adattárolás és biztonsági mentés:</strong> A felhőben nagy mennyiségű adat tárolható biztonságosan, és a rendszeres biztonsági mentés révén csökkenthető az adatvesztés kockázata.</li>
+        <li><strong>Alkalmazásfejlesztés és tesztelés:</strong> A fejlesztők könnyen és gyorsan hozhatnak létre fejlesztői környezeteket a felhőben, ahol tesztelhetik és finomhangolhatják alkalmazásaikat.</li>
+        <li><strong>Webhosting:</strong> A weboldalak és alkalmazások hosztolása a felhőben egyszerű és rugalmas megoldást kínál, amely automatikusan skálázható a forgalmi igényeknek megfelelően.</li>
+        <li><strong>Adatfeldolgozás:</strong> Nagy mennyiségű adat gyors feldolgozása és elemzése (pl. big data és gépi tanulás) egyszerűbbé válik a felhő alapú infrastruktúrával.</li>
+        <li><strong>Szoftverek távoli elérése:</strong> A felhőben tárolt alkalmazások (pl. irodai programok, e-mail, CRM rendszerek) bárhonnan, bármilyen eszközről elérhetők.</li>
+        <li><strong>Virtualizált infrastruktúra:</strong> A felhő szolgáltatók virtualizált szervereket és hálózatokat kínálnak, amelyek igény szerint bővíthetők és konfigurálhatók.</li>
+    </ul>
+
+    <h2>Számítási felhő modelljei</h2>
+    <p>A számítási felhő szolgáltatások három alapvető modellre épülnek:</p>
+    <ol>
+        <li><strong>IaaS (Infrastructure as a Service):</strong> Alapvető számítási erőforrások (pl. virtuális gépek, tárolókapacitás, hálózat) biztosítása, amelyeken a felhasználók saját alkalmazásaikat futtathatják.</li>
+        <li><strong>PaaS (Platform as a Service):</strong> Olyan platformszolgáltatás, amely lehetővé teszi alkalmazások fejlesztését, futtatását és kezelését anélkül, hogy az alapvető infrastruktúrával kellene foglalkozni.</li>
+        <li><strong>SaaS (Software as a Service):</strong> Felhő alapú szoftverek, amelyeket a felhasználók interneten keresztül érhetnek el, például e-mail szolgáltatások, irodai alkalmazások.</li>
+    </ol>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropdown-btn">Fel tudja sorolni a gyakoribb felhőszolgáltatások (SaaS, PaaS, IaaS) jellemzőit, tud rájuk példát mondani, és használni is képes azokat (pl. Office 365, Gmail, Google Drive, Dropbox, OneDrive stb.).</button>
           <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
+            <h2>Felhőszolgáltatások jellemzői és példái</h2>
+
+    <h2>SaaS (Software as a Service)</h2>
+    <p>
+        A SaaS egy olyan szolgáltatási modell, ahol a szoftvereket interneten keresztül érhetik el a felhasználók. A szoftverek működéséhez nincs szükség helyi telepítésre, mivel a szolgáltató felhőben hosztolja azokat. A felhasználók havidíjat fizetnek a használatért, és általában böngészőn keresztül férhetnek hozzájuk.
+    </p>
+    <ul>
+        <li><strong>Jellemzők:</strong></li>
+        <ul>
+            <li>Nincs szükség helyi telepítésre vagy karbantartásra.</li>
+            <li>Az alkalmazások bárhonnan, bármilyen eszközről elérhetők.</li>
+            <li>A szoftverek mindig a legfrissebb verzióban érhetők el.</li>
+        </ul>
+        <li><strong>Példák:</strong></li>
+        <ul>
+            <li>Google Workspace (Gmail, Google Drive, Docs)</li>
+            <li>Microsoft 365 (Word, Excel, PowerPoint online)</li>
+            <li>Salesforce (CRM)</li>
+        </ul>
+    </ul>
+
+    <h2>PaaS (Platform as a Service)</h2>
+    <p>
+        A PaaS egy olyan felhőalapú szolgáltatás, amely fejlesztési platformokat biztosít a felhasználók számára. Ez a modell lehetővé teszi az alkalmazások fejlesztését, futtatását és kezelését anélkül, hogy az infrastruktúra (szerverek, tárolás) kezelésével foglalkozniuk kellene. 
+    </p>
+    <ul>
+        <li><strong>Jellemzők:</strong></li>
+        <ul>
+            <li>Teljes fejlesztési környezetet biztosít.</li>
+            <li>Az infrastruktúra kezelése a szolgáltató feladata.</li>
+            <li>Skálázható, igény szerint bővíthető.</li>
+        </ul>
+        <li><strong>Példák:</strong></li>
+        <ul>
+            <li>Google App Engine</li>
+            <li>Microsoft Azure App Service</li>
+            <li>Heroku</li>
+        </ul>
+    </ul>
+
+    <h2>IaaS (Infrastructure as a Service)</h2>
+    <p>
+        Az IaaS modellben a szolgáltatók alapvető számítási erőforrásokat (virtuális gépek, tárhely, hálózat) kínálnak. A felhasználók igényeik szerint bővíthetik vagy csökkenthetik ezeket az erőforrásokat, és teljes kontrollal rendelkeznek az infrastruktúra felett, de az operációs rendszert és alkalmazásokat maguk kezelik.
+    </p>
+    <ul>
+        <li><strong>Jellemzők:</strong></li>
+        <ul>
+            <li>Teljes infrastruktúra feletti kontroll.</li>
+            <li>Skálázható erőforrások.</li>
+            <li>A felhasználó kezeli a virtuális gépeket és az operációs rendszert.</li>
+        </ul>
+        <li><strong>Példák:</strong></li>
+        <ul>
+            <li>Amazon Web Services (AWS EC2)</li>
+            <li>Microsoft Azure Virtual Machines</li>
+            <li>Google Compute Engine</li>
+        </ul>
+    </ul>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropdown-btn">Ismeri a felhőmodelleket (privát, publikus, hibrid), azok jellemzőit, és konkrét példákat tud mondani a használatukra.</button>
           <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
+            <h2>Felhőmodellek</h2>
+    <p>A felhőalapú számítástechnika különböző típusú felhőmodelleket kínál, amelyek célja, hogy különböző üzleti igényekhez és biztonsági követelményekhez igazodjanak. A leggyakrabban használt felhőmodellek a privát, publikus és hibrid felhők.</p>
+
+    <h2>Privát felhő</h2>
+    <p>A privát felhő egy olyan felhőmodell, ahol az infrastruktúra és a szolgáltatások egyetlen szervezet tulajdonában és kezelésében vannak. A privát felhők gyakran a szervezet saját adatközpontjában vagy egy külső szolgáltatónál kerülnek hosztolásra, de a hozzáférés kizárólag az adott vállalat számára van fenntartva.</p>
+
+    <ul>
+        <li><strong>Jellemzők:</strong></li>
+        <ul>
+            <li>Nagyobb biztonság és adatvédelem, mivel a hozzáférés korlátozott.</li>
+            <li>Teljes kontroll az infrastruktúra felett.</li>
+            <li>Ideális érzékeny adatok és szigorú biztonsági követelmények esetén.</li>
+        </ul>
+        <li><strong>Példák a használatra:</strong></li>
+        <ul>
+            <li>Bankszektor: érzékeny ügyféladatok biztonságos kezelése.</li>
+            <li>Kormányzati szervezetek: kritikus infrastruktúra és adatok védelme.</li>
+        </ul>
+    </ul>
+
+    <h2>Publikus felhő</h2>
+    <p>A publikus felhő olyan szolgáltatás, amelyet külső szolgáltatók nyújtanak, és amely mindenki számára hozzáférhető az interneten keresztül. A felhasználók csak a ténylegesen használt erőforrásokért fizetnek, és az infrastruktúra üzemeltetéséért és karbantartásáért a szolgáltató felel.</p>
+
+    <ul>
+        <li><strong>Jellemzők:</strong></li>
+        <ul>
+            <li>Megosztott infrastruktúra, alacsonyabb költségek.</li>
+            <li>Gyorsan skálázható és rugalmas.</li>
+            <li>Kevesebb kontroll a felhasználói oldalról az infrastruktúra felett.</li>
+        </ul>
+        <li><strong>Példák a használatra:</strong></li>
+        <ul>
+            <li>Start-up cégek: gyorsan növekvő szolgáltatások futtatása anélkül, hogy saját infrastruktúrát kellene kiépíteni.</li>
+            <li>Webalkalmazások hosztolása: például e-kereskedelmi webhelyek vagy mobilalkalmazások kiszolgálása.</li>
+        </ul>
+    </ul>
+
+    <h2>Hibrid felhő</h2>
+    <p>A hibrid felhőmodell kombinálja a privát és publikus felhők előnyeit. A szervezetek kritikus adataikat és alkalmazásaikat a privát felhőben tartják, míg a kevésbé érzékeny adatokat és nagy terhelésű alkalmazásokat a publikus felhőben futtatják. Ez a megközelítés nagyobb rugalmasságot biztosít az erőforrások kezelésében.</p>
+
+    <ul>
+        <li><strong>Jellemzők:</strong></li>
+        <ul>
+            <li>Kritikus adatok privát felhőben, míg a kevésbé érzékeny adatok publikus felhőben tárolhatók.</li>
+            <li>Rugalmasság és skálázhatóság a különböző felhőmodellek kombinációja révén.</li>
+            <li>Költséghatékony, hiszen a publikusan elérhető erőforrásokat csak szükség esetén használják.</li>
+        </ul>
+        <li><strong>Példák a használatra:</strong></li>
+        <ul>
+            <li>Egészségügyi szektor: a betegadatok privát felhőben történő tárolása, míg a kevésbé kritikus alkalmazások publikus felhőben futnak.</li>
+            <li>Nagyvállalatok: szezonális terhelés esetén a publikus felhő kapacitásának igénybevétele a privát felhő mellett.</li>
+        </ul>
+    </ul>
           </div>
         </div>
 
